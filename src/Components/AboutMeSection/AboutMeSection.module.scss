@@ -1,0 +1,153 @@
+@import "src/styles/globalColors";
+
+.wrapper{
+
+  color: white;
+
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 100px;
+
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 1400px;
+
+  transition: 0.3s;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.pictureWrapper{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+
+  @media screen and (max-width:900px){
+
+    margin-top: 40px;
+
+    .blob{
+      width: 100vw;
+    }
+
+
+
+  }
+
+
+
+
+}
+
+.aboutMeParagraph{
+
+  position: relative;
+  max-width: 12000px;
+  transition: 0.3s;
+
+
+@media screen and (max-width: 1200px){
+
+ width: 90vw;
+}
+  h1{
+    margin-top: 3em;
+    font-family: Oxanium;
+    font-size: 1.6em;
+
+    @media screen and (max-width: 650px){
+      margin-top: 2em;
+    }
+
+  }
+
+  p{
+
+    strong{
+      font-weight: 600;
+    }
+    font-size: 21px;
+
+    @media screen and (max-width: 700px){
+      font-size: 1em;
+
+    }
+  }
+}
+
+@keyframes rotateBlob {
+
+  0%{
+    transform: rotate(225deg) scale(0.7);;
+  }
+
+  50%{
+    transform: rotate(200deg) scale(0.8);;
+  }
+
+  100%{
+    transform: rotate(225deg) scale(0.7);;
+  }
+
+}
+
+
+.blob{
+  transition: 2s;
+  @media screen and (max-width: 1200px){
+    transform: rotate(225deg) scale(0.7);
+  }
+  transform: rotate(-60deg) scale(0.7);
+
+  animation: rotateBlob 10s infinite;
+
+
+}
+
+.picture{
+  transition: 0.3s;
+  position: absolute;
+  z-index: 50;
+  width: 300px;
+}
+
+.wave1{
+ position: absolute;
+  width: 101vw;
+  z-index: -20;
+  bottom: -15vw;
+
+  @media screen and (max-width: 1200px) {
+    bottom: -24vw;
+
+  }
+
+
+}
+
+.absoluteBackground{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 90%;
+  background: $dark-blue;
+
+  @media screen and (max-width: 1200px) {
+    height: 100%;
+
+  }
+}
