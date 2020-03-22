@@ -13,7 +13,7 @@ const HeroSection = () => {
 
 
         <div className={styles.socialMediaIcons}>
-            <ScrollAnimation offset={0} animateIn="fadeInLeft" delay={2000}>
+            <ScrollAnimation offset={0} animateOnce={true} animateIn="fadeInLeft" delay={2000}>
 
             <i className="fab fa-linkedin-in"></i>
 
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
         <header>
 
-            <ScrollAnimation animateIn="fadeIn" offset={0}>
+            <ScrollAnimation animateOnce={true} animateIn="fadeIn" offset={0}>
 
             <img className={styles.logoPicture} src={logoPicture}/>
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             </ScrollAnimation>
         </header>
         <div className={styles.contactInfos} >
-        <ScrollAnimation offset={0} animateIn="fadeInRight" delay={1500}>
+        <ScrollAnimation animateOnce={true} offset={0} animateIn="fadeInRight" delay={1500}>
 
 
             <i className="fab fa-github"></i>

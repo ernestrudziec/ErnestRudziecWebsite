@@ -38,7 +38,7 @@ const AboutMeSection = () => {
 
             </div>
 
-            <img className={styles.wave1} src={wave1}/>
+
 
         </div>
 
