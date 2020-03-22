@@ -13,6 +13,11 @@
   align-items: center;
   padding: 0px 100px;
 
+  @media screen and (max-width: 900px) {
+    padding: 0;
+
+  }
+
 }
 
 .contentWrapper {

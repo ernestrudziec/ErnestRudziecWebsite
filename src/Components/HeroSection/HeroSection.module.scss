@@ -99,6 +99,11 @@ i{
   flex-direction: column;
   align-items: center;
 
+  @media screen and (max-width: 900px) {
+    margin: 0;
+
+  }
+
 
 
 
@@ -280,6 +285,7 @@ i{
   -moz-animation:     active-screen 5s infinite;
   -o-animation:      active-screen 5s infinite;
   animation: active-screen 5s infinite;
+
 
   @media screen and (max-width: 600px){
     width: 80vw;
