@@ -5,6 +5,7 @@
 html{
     font-family: 'Baloo 2';
     overflow-x: hidden;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -17,9 +18,9 @@ body{
 
     #root{
         height: auto;
-        overflow-y: scroll;
-        position: relative;
-        z-index: 999;
+        margin: 0;
+        padding: 0;
+
     }
 }
 

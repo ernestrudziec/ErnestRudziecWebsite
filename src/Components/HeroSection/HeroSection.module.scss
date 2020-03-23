@@ -1,6 +1,7 @@
 @import '../../styles/globalColors';
 
 .contactInfos{
+
   position: absolute;
   right: 0;
   top: 50%;
@@ -132,10 +133,9 @@ i{
 }
 
 .wrapper{
-
+  overflow-x: hidden;
+  overflow-y: scroll;
   color: #111126;
-
-
   position: relative;
   min-height: 95vh;
   padding: 0px 100px;
