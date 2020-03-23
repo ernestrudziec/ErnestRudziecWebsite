@@ -8,10 +8,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-right: 100px;
 
 
   @media screen and (max-width: 1000px){
-
+    padding: 0;
+  margin-right: 0;
     position: relative;
     margin-top: 50px;
     flex-direction: row;
@@ -93,7 +95,7 @@ i{
   color: #111126;
   position: relative;
   min-height: 100vh;
-  margin: 0px 100px;
+  padding: 0px 100px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -101,7 +103,7 @@ i{
 
   @media screen and (max-width: 900px) {
     margin: 0;
-
+    padding: 0;
   }
 
 
@@ -138,7 +140,7 @@ i{
       text-align: center;
 
       @media screen and (max-width: 700px){
-        padding: 0px;
+        padding: 0;
         font-size: 1.3em;
       }
     }
@@ -152,6 +154,7 @@ i{
 }
 
 .socialMediaIcons{
+  margin-left: 100px;
   display: flex;
   color: #111126;;
   position: absolute;
@@ -166,6 +169,7 @@ i{
 
   @media (max-width: 1000px) {
 
+  margin: 0;
  position: relative;
     margin-top: 50px;
     div {
@@ -292,6 +296,11 @@ i{
 
   }
 
+  @media screen and (max-height: 700px) {
+    width: 40vh;
+
+  }
+
 }
 
 
@@ -306,4 +315,10 @@ i{
     width: 80vw;
 
   }
+
+  @media screen and (max-height: 700px) {
+    width: 40vh;
+
+  }
+
 }

@@ -5,17 +5,20 @@
 html{
     font-family: 'Baloo 2';
     overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+
 }
 
 
 body{
-
     height: auto;
     margin: 0;
     padding: 0;
 
-
+    #root{
+        height: auto;
+        overflow-y: scroll;
+        position: relative;
+        z-index: 999;
+    }
 }
 
