@@ -4,6 +4,8 @@ import logoPicture from "../../assets/svg/logotyp.svg";
 import programmerPicture from "../../assets/svg/programmer.svg";
 import lightPicture from '../../assets/svg/lightProgrammer.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
+import wave from '../../assets/svg/wave1.svg';
+import logoPicture2 from '../../assets/svg/logotyp2.svg';
 
 const HeroSection = () => {
 
@@ -29,7 +31,7 @@ const HeroSection = () => {
         <header>
 
             <ScrollAnimation animateOnce={true} animateIn="fadeIn" offset={0}>
-
+            <img className={styles.logoPicture2} src={logoPicture2}/>
             <img className={styles.logoPicture} src={logoPicture}/>
 
             </ScrollAnimation>
@@ -53,7 +55,7 @@ const HeroSection = () => {
 
 
 
-
+        <a href="#about-me"><div className={styles.scrollDown}>trochę o mnie<i className="fas fa-arrow-down"></i></div></a>
         <img className={styles.lightPicture} src={lightPicture}/>
         <img className={styles.programmerPicture} src={programmerPicture}/>
 

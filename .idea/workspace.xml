@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44992181-08df-480b-bdc4-840d951546a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/MyWorksSection/MyWorksSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MyWorksSection/MyWorksSection.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/HomePageView/HomePageView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/HomePageView/HomePageView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/22.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Vector.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ant-design_github-filled.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ic_outline-alternate-email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/picture2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/picture2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/wave1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/wave1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globalColors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globalColors.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +77,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -75,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584872425481</updated>
       <workItem from="1584872428043" duration="23478000" />
-      <workItem from="1584969258712" duration="1956000" />
+      <workItem from="1584969258712" duration="8439000" />
     </task>
     <servers />
   </component>
@@ -87,22 +112,22 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="225" y="227" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1584873292244" />
-    <state width="983" height="220" key="GridCell.Tab.0.bottom" timestamp="1584901202889">
+    <state width="899" height="220" key="GridCell.Tab.0.bottom" timestamp="1584971454661">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="983" height="220" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1584901202889" />
-    <state width="983" height="220" key="GridCell.Tab.0.center" timestamp="1584901202888">
+    <state width="899" height="220" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1584971454661" />
+    <state width="899" height="220" key="GridCell.Tab.0.center" timestamp="1584971454660">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="983" height="220" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1584901202888" />
-    <state width="983" height="220" key="GridCell.Tab.0.left" timestamp="1584901202888">
+    <state width="899" height="220" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1584971454660" />
+    <state width="899" height="220" key="GridCell.Tab.0.left" timestamp="1584971454660">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="983" height="220" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1584901202888" />
-    <state width="983" height="220" key="GridCell.Tab.0.right" timestamp="1584901202889">
+    <state width="899" height="220" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1584971454660" />
+    <state width="899" height="220" key="GridCell.Tab.0.right" timestamp="1584971454661">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="983" height="220" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1584901202889" />
+    <state width="899" height="220" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1584971454661" />
     <state x="125" y="219" width="670" height="676" key="search.everywhere.popup" timestamp="1584887448810">
       <screen x="0" y="23" width="1680" height="969" />
     </state>

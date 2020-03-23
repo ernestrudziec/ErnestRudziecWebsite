@@ -1,3 +1,4 @@
+@import '../../styles/globalColors';
 
 .contactInfos{
   position: absolute;
@@ -91,10 +92,49 @@ i{
   }
 }
 
+@keyframes changeLogo {
+
+  0%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+.logoPicture2{
+
+  position: absolute;
+  z-index: 2;
+  animation: changeLogo ease-in-out 5s infinite;
+
+  width: 400px;
+
+  @media screen and(max-width: 900px) {
+    width: 300px;
+
+  }
+
+  @media screen and(max-width: 600px) {
+    width: 70vw;
+
+  }
+}
+
 .wrapper{
   color: #111126;
   position: relative;
-  min-height: 100vh;
+  min-height: 95vh;
   padding: 0px 100px;
   display: flex;
   justify-content: flex-start;
@@ -297,7 +337,13 @@ i{
   }
 
   @media screen and (max-height: 700px) {
-    width: 40vh;
+  width: 40vh;
+
+}
+
+  @media screen and (max-height: 400px) {
+    display: none;
+    overflow: hidden;
 
   }
 
@@ -321,4 +367,49 @@ i{
 
   }
 
+  @media screen and (max-height: 400px) {
+    display: none;
+    overflow: hidden;
+
+  }
+
+}
+
+
+a{
+  color: inherit;
+}
+
+.scrollDown{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  bottom: -20px;
+  background: white;
+  z-index: 50;
+  left: 50%;
+
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: $dark-blue;
+
+  i{
+    margin-left: 5px;
+  }
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: solid 3px transparent;
+
+  &:hover{
+
+    color: white;
+    background: $pink;
+    border-bottom:  solid white 3px;
+    border-radius: 5px;
+  }
 }
