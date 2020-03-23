@@ -12,6 +12,7 @@ import wave2 from '../../assets/svg/wave2.svg';
 const AboutMeSection = () => {
 
     return(
+
 <>
         <div id="about-me" className={styles.wrapper}>
 
@@ -88,8 +89,8 @@ const AboutMeSection = () => {
 
 
 
+</>
 
-    </>
     );
 
 

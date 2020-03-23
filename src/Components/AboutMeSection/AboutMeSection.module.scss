@@ -24,11 +24,10 @@
 
   display: flex;
   justify-content: space-around;
-  padding: 0 100px;
   align-items: center;
   flex-direction: row;
   max-width: 1400px;
-
+  padding: 0;
 
   transition: 0.3s;
   @media screen and (max-width: 1200px) {
@@ -175,7 +174,7 @@
   @media screen and (max-width: 1200px){
     top: -2px;
   }
-  width: 110vw;
+  width: 100vw;
   filter: flipV();
   transform: scaleX(-1);
 
@@ -193,7 +192,7 @@
   @media screen and (max-width: 1000px){
     bottom: -2px;
   }
-  width: 110vw;
+  width: 100vw;
   filter: flipV();
   transform: scaleX(-1);
 
