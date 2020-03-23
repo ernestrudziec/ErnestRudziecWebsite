@@ -2,13 +2,20 @@
 
 
 
-html, body{
-    overflow-x: hidden;
+html{
     font-family: 'Baloo 2';
-    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+body{
+
+    height: auto;
     margin: 0;
     padding: 0;
-    z-index: 999;
+
 
 }
 
