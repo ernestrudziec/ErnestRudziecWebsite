@@ -16,8 +16,6 @@ const AboutMeSection = () => {
 <>
         <div id="about-me" className={styles.wrapper}>
 
-            <div className={styles.absoluteBackground}></div>
-
             <div className={styles.contentWrapper}>
 
             <div className={styles.aboutMeParagraph}>
@@ -35,8 +33,6 @@ const AboutMeSection = () => {
 
 
             </div>
-
-
             <div className={styles.pictureWrapper}>
             <img className={styles.picture} src={picture}/>
             <img className={styles.blob} src={blob}/>
