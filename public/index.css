@@ -10,6 +10,7 @@ html{
 
 
 body{
+    overflow-x: hidden;
     height: auto;
     margin: 0;
     padding: 0;
