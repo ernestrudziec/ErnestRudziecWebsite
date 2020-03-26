@@ -1,105 +1,4 @@
 @import "src/styles/globalColors";
-
-.wrapper{
-
-
-
-
-}
-
-.contentWrapper{
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100vw;
-  min-height: 80vh;
-  color: white;
-  background: $dark-blue;
-  padding: 0 100px;
-
-  @media screen and (max-width: 1200px) {
-    padding: 0;
-    flex-direction: column;
-
-  }
-}
-
-.pictureWrapper{
-  width: 50vw;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-
-
-  @media screen and(max-width:1600px) {
-    margin-bottom: 60px;
-    width: 90%;
-  }
-
-  @media screen and (max-width:900px){
-
-    margin-top: 10px;
-
-    .blob{
-      width: 100vw;
-
-    }
-
-
-
-  }
-
-}
-
-.aboutMeParagraph{
-
-  line-height: 1.5;
-  position: relative;
-  transition: 0.3s;
-  z-index: 0;
-
-@media screen and (max-width: 1200px){
-  width: 90vw;
-}
-
-  h1{
-    margin-top: 3em;
-    font-family: Oxanium;
-    font-size: 1.6em;
-
-    @media screen and (max-width: 650px){
-      margin-top: 2em;
-    }
-
-  }
-
-  p{
-
-    &:nth-of-type(2){
-      color: white;
-      background: $pink;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-
-    strong{
-      font-weight: 600;
-
-    }
-    font-size: 21px;
-
-    @media screen and (max-width: 700px){
-      font-size: 1em;
-
-    }
-  }
-}
-
 @keyframes rotateBlob {
 
   0%{
@@ -116,6 +15,102 @@
 
 }
 
+.waveTop{
+  position: absolute;
+  top: -30px;
+  @media screen and (max-width: 1200px){
+    top: -2px;
+  }
+  width: 100vw;
+  filter: flipV();
+  transform: scaleX(-1);
+
+
+
+}
+
+.waveBottom{
+  width: 100vw;
+  overflow-x: hidden;
+  position: absolute;
+  bottom: -340px;
+  z-index: 1;
+  @media screen and (max-width: 1600px){
+    bottom: -200px;
+  }
+
+  @media screen and (max-width: 1000px){
+    bottom: -2px;
+  }
+
+  filter: flipV();
+  transform: scaleX(-1);
+
+
+
+}
+
+.wrapper{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $dark-blue;
+  color: white;
+  padding: 100px;
+
+  @media screen and (max-width: 1400px){
+    padding: 1vh 5vw;
+    flex-direction: column;
+  }
+
+
+}
+
+.pictureWrapper {
+
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+
+
+
+  @media screen and(max-width: 1400px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: 900px) {
+
+    margin-top: 10px;
+
+    .blob {
+      width: 100vw;
+
+    }
+
+
+  }
+}
+
+.paragraphWrapper{
+  width: 50%;
+  transition: 0.3s;
+  @media screen and (max-width: 1400px){
+    width: auto;
+  }
+  p{
+    &:nth-of-type(2){
+      color: white;
+      background: $pink;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+  }
+}
 
 .blob{
   transition: 2s;
@@ -134,218 +129,101 @@
   position: absolute;
   z-index: 1;
   width: 300px;
-
-
 }
+
+
+
+
 
 .aboutResponsiveWrapper{
 
   position: relative;
-  min-height: 50vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0px 100px;
-  padding-top: 100px;
-  @media screen and (max-width: 1000px){
-    padding-top: 0;
+  background: white;
+  color: $dark-blue;
+  padding: 10vh 300px 0vh 300px;
+
+  @media screen and (max-width: 1400px){
+    padding: 10vh 5vw;
+    flex-direction: column;
+
   }
-  flex-direction: column;
-
-
-
-
-}
-
-
-
-.waveTop{
-  position: absolute;
-  top: -30px;
-  @media screen and (max-width: 1200px){
-    top: -2px;
-  }
-  width: 100vw;
-  filter: flipV();
-  transform: scaleX(-1);
-
-
-
-}
-
-.waveBottom{
-  width: 100vw;
-  position: absolute;
-  bottom: -270px;
-
-  @media screen and (max-width: 1600px){
-    bottom: -200px;
-  }
-
-  @media screen and (max-width: 1000px){
-    bottom: -2px;
-  }
-
-  filter: flipV();
-  transform: scaleX(-1);
-  overflow-x: hidden;
-
 
 }
 
 .contentWrapper2{
-  @media screen and (max-width:900px){
-  margin-top: 20px;
-  }
-
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
- max-width: 1400px;
+  text-align: right;
 
+  @media screen and (max-width: 1400px){
+    flex-direction: column;
 
-
-  @media screen and (max-width: 1200px) {
-    flex-direction: column-reverse;
-    margin-top: 30px;
   }
 
+
+
+  .responsiveDescriptionRight{
+    padding-left: 100px;
+    transition: 0.3s;
+
+
+    @media screen and (max-width:1400px){
+      text-align: center;
+      padding: 0;
+
+    }
+
+  }
 }
 
 .responsivePicture{
+
   width: 500px;
 
-  @media screen and (max-width:900px) {
-    width: 80vw;
+  @media screen and (max-width:700px) {
+
+    width: 70vw;
     margin-bottom: 100px;
   }
 
 
 }
 
-.responsiveDescriptionRight{
-  padding-left: 100px;
-
-  @media screen and (max-width:900px) {
-    margin-bottom: 10px;
-  }
-
-  @media screen and (max-width:1200px){
-  padding: 0;
-    margin-bottom: 10px;
-
-  }
-
-  position: relative;
-  max-width: 1200px;
-  transition: 0.3s;
-  z-index: 0;
-
-
-  @media screen and (max-width: 1200px){
-
-    width: 90vw;
-  }
-  h1{
-
-    margin-top: 3em;
-    font-family: Oxanium;
-    font-size: 1.6em;
-
-
-    @media screen and (max-width: 650px){
-      margin-top: 2em;
-    }
-
-  }
-
-  p{
-
-
-    strong{
-
-      font-weight: 600;
-    }
-    font-size: 21px;
-
-    @media screen and (max-width: 700px){
-      font-size: 1em;
-
-    }
-  }
-}
-
 .contentWrapper3{
-  @media screen and (max-width:700px){
-    margin-top: -100px;
-  }
+  width: 100%;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
-  margin: 0;
-
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
-    margin-bottom: 0px;
-
-  }
-
-  margin-bottom: 100px;
-}
 
 
-.responsiveDescriptionLeft{
-  padding-right: 100px;
-
-
-  @media screen and (max-width:900px) {
-    margin-bottom: 10px;
-  }
-
-  @media screen and (max-width:1200px){
-    padding: 0;
-    margin-bottom: 10px;
+  @media screen and (max-width: 1400px) {
+  flex-direction: column-reverse;
+    text-align: center;
 
   }
 
-  position: relative;
-  max-width: 1200px;
-  transition: 0.3s;
-  z-index: 0;
 
 
-  @media screen and (max-width: 1200px){
+  .responsiveDescriptionLeft{
+    padding-right: 100px;
 
-    width: 90vw;
-  }
-  h1{
-
-    margin-top: 3em;
-    font-family: Oxanium;
-    font-size: 1.6em;
-
-
-    @media screen and (max-width: 650px){
-      margin-top: 2em;
+    @media screen and (max-width: 1400px){
+      padding: 0;
     }
-
-  }
-
-  p{
-
-
-    strong{
-
-      font-weight: 600;
-    }
-    font-size: 21px;
-
-    @media screen and (max-width: 700px){
-      font-size: 1em;
+    transition: 0.3s;
 
     }
   }
-}
+
+
+
+
+
 

@@ -14,35 +14,28 @@ const AboutMeSection = () => {
     return(
 
 <>
-        <div id="about-me" className={styles.wrapper}>
+        <section id="about-me" className={styles.wrapper}>
 
-            <div className={styles.contentWrapper}>
-
-            <div className={styles.aboutMeParagraph}>
+            <div className={styles.paragraphWrapper}>
 
                 <h1>Cześć, tu Ernest. Fajnie że wpadłeś 👋🏻</h1>
 
                 <p>Jestem początkującym <strong>front-end developerem</strong> ⌨️ oraz nieco bardziej doświadczonym <strong>graphic designerem</strong> ✏️ co daje mi możliwość tworzenia aplikacji webowych od podstaw całkowicie samodzielnie.</p>
-
-
-
-
-
 
                 <p> W swojej pracy wykorzystuję <strong>najnowsze technologie</strong> 🚀 zapewniające doskonałą wydajność. Dbam o <strong>czystość i przejrzystość kodu</strong>, utrzymując przy tym odpowiednią <strong>semantykę, standardy oraz nazewnictwo</strong> np. (W3C, BEM, CamelCase). </p>
 
 
             </div>
             <div className={styles.pictureWrapper}>
-            <img className={styles.picture} src={picture}/>
-            <img className={styles.blob} src={blob}/>
+            <img className={styles.picture} alt="img" src={picture}/>
+            <img className={styles.blob} alt="img" src={blob}/>
             </div>
 
-            </div>
 
 
 
-        </div>
+
+        </section>
 
     <div className={styles.aboutResponsiveWrapper}>
         <img src={wave1} className={styles.waveTop}/>
@@ -50,6 +43,7 @@ const AboutMeSection = () => {
         <div className={styles.contentWrapper2}>
 
             <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
+
         <img src={picture2} className={styles.responsivePicture}/>
             </ScrollAnimation>
         <div className={styles.responsiveDescriptionRight}>
@@ -72,9 +66,9 @@ const AboutMeSection = () => {
 
             </div>
             <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
-            <div className={styles.pictureWrapper}>
+
                 <img src={picture3} className={styles.responsivePicture}/>
-            </div>
+
             </ScrollAnimation>
 
     </div>
