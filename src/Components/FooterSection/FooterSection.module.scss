@@ -1,0 +1,54 @@
+@import '../../styles/globalColors';
+
+.wrapper {
+  min-height: 40vh;
+  margin-top: -2px;
+  font-size: 0.6em;
+  padding: 10vh 0;
+  background: $dark-blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Oxanium;
+  font-weight: 600;
+
+  div {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    border-left: solid 1px white;
+    padding-left: 50px;
+    border-right: solid 1px white;
+    padding-right: 50px;
+
+    align-items: center;
+    font-size: 1em;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 600px){
+      padding: 0 20px;
+    }
+
+    span {
+      margin: 0 10px;
+      @media screen and (max-width: 600px){
+       margin: 0 5px;
+      }
+    }
+
+  }
+
+  img {
+    margin-left: 30px;
+    width: 150px;
+
+    @media screen and (max-width: 600px){
+      width: 100px;
+      margin-left: 10px;
+    }
+  }
+
+
+}
