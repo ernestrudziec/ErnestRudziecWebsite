@@ -15,49 +15,16 @@
 
 }
 
-.waveTop{
-  position: absolute;
-  top: -30px;
-  @media screen and (max-width: 1200px){
-    top: -2px;
-  }
-  width: 100vw;
-  filter: flipV();
-  transform: scaleX(-1);
 
-
-
-}
-
-.waveBottom{
-  width: 100vw;
-  overflow-x: hidden;
-  position: absolute;
-  bottom: -340px;
-  z-index: 1;
-  @media screen and (max-width: 1600px){
-    bottom: -200px;
-  }
-
-  @media screen and (max-width: 1000px){
-    bottom: -2px;
-  }
-
-  filter: flipV();
-  transform: scaleX(-1);
-
-
-
-}
 
 .wrapper{
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: $dark-blue;
   color: white;
-  padding: 100px;
+  padding: 10vh $padding;
 
   @media screen and (max-width: 1400px){
     padding: 1vh 5vw;
@@ -69,7 +36,9 @@
 
 .pictureWrapper {
 
-  width: 50%;
+
+  width:500px;
+  margin-left: 50px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -80,6 +49,8 @@
 
   @media screen and(max-width: 1400px) {
     margin-bottom: 100px;
+    margin-left: 0;
+    width: auto;
   }
 
   @media screen and (max-width: 900px) {
@@ -96,7 +67,8 @@
 }
 
 .paragraphWrapper{
-  width: 50%;
+
+
   transition: 0.3s;
   @media screen and (max-width: 1400px){
     width: auto;
@@ -142,16 +114,53 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: white;
+
   color: $dark-blue;
-  padding: 10vh 300px 0vh 300px;
+  padding: 35vh $padding;
+
+
 
   @media screen and (max-width: 1400px){
-    padding: 10vh 5vw;
+    padding: 30vh 5vw;
     flex-direction: column;
 
   }
 
+  @media screen and (max-width: 550px){
+    padding: 10vh 5vw;
+
+  }
+
+
+&:before{
+  position: absolute;
+  content: "";
+  top: -5px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background: url("../../../src/assets/svg/wave1.svg") top no-repeat;
+  background-size: 110vw;
+  z-index: 0;
+}
+
+  &:after{
+
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: -100px;
+    z-index: -1;
+    @media screen and (max-width: 800px){
+      bottom: -5px;
+    }
+    left: 0;
+    right: 0;
+    background: url("../../../src/assets/svg/wave2.svg") bottom no-repeat;
+    background-size: 110vw;
+    ;
+
+  }
 }
 
 .contentWrapper2{
@@ -188,8 +197,8 @@
 
   @media screen and (max-width:700px) {
 
-    width: 70vw;
-    margin-bottom: 100px;
+    width: 50vw;
+
   }
 
 
@@ -207,6 +216,7 @@
   flex-direction: column-reverse;
     text-align: center;
 
+
   }
 
 
@@ -216,6 +226,7 @@
 
     @media screen and (max-width: 1400px){
       padding: 0;
+
     }
     transition: 0.3s;
 

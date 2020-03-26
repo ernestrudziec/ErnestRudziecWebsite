@@ -1,0 +1,192 @@
+@import "../../../src/styles/globalColors";
+
+.wrapper{
+
+  min-height: 60vh;
+  background: $dark-blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vh 100px;
+
+  @media screen and (max-width: 1400px){
+    padding: 1vh 5vw;
+  }
+
+  @media screen and (max-width: 800px){
+    padding: 1vh 1vw;
+  }
+}
+
+h2 {
+  position: absolute;
+  top: -40px;
+  height: 40px;
+  font-size: 1.3rem;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Oxanium;
+  background: $mint;
+  color: white;
+  border-radius: 5px;
+  border-top: solid 3px white;
+  @include lightShadow;
+
+  @media screen and (max-width: 1000px){
+    font-size: 1.1rem;
+  }
+
+}
+
+h3{
+  font-family: Oxanium;
+  font-size: 1.2rem;
+  color: $mint;
+}
+
+.wrapperInside{
+  display: flex;
+  justify-content: center;
+  background: $dark-blue;
+  color: white;
+ height: auto;
+
+
+
+
+
+  @media screen and (max-width: 1300px){
+    flex-direction: column;
+    width: 90vw;
+  }
+}
+
+.designerWrapper{
+
+  h2{
+    background: $pink;
+  }
+
+  h3{
+    color: $pink;
+  }
+
+  border-bottom: $pink solid 15px !important;
+}
+
+.developerWrapper{
+
+}
+
+.developerWrapper, .designerWrapper{
+  text-align: center;
+  @include lightShadow;
+  position: relative;
+  display: flex;
+  background: white;
+  color: $dark-blue;
+  height: auto;
+  width: 650px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 30px;
+  padding: 50px 30px;
+
+
+  @media screen and (max-width: 1300px){
+    width: 90vw;
+    margin: 3vh 0;
+  }
+
+  border-bottom: $mint solid 15px;
+
+  div{
+    font-size: 4em;
+    margin: 0px 0px 30px 0px;
+    color: $dark-blue;
+  }
+
+
+}
+
+.picture{
+  margin: 0 -50px;
+  position: relative;
+  z-index: 50;
+
+  @media screen and (max-width: 1300px){
+    display: none;
+  }
+}
+
+.whatIUse{
+  width:  80%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media screen and (max-width: 900px){
+    height:auto;
+  }
+  div{
+
+   flex: auto;
+    font-size: 4em;
+    margin: 10px;
+  }
+}
+
+.whatIUseDesign{
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+@media screen and (max-width: 900px){
+  height:auto;
+}
+
+  div{
+    flex: auto;
+    font-size: 4em;
+    margin: 10px;
+
+
+  }
+}
+
+.adobe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 0px;
+
+  @media screen and (max-width: 900px){
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+
+  div{
+
+    font-size: 8em;
+    padding-right: 30px;
+
+
+    @media screen and (max-width: 900px){
+      padding: 0;
+    }
+  }
+}

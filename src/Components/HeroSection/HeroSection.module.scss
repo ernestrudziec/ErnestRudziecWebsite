@@ -1,5 +1,37 @@
 @import '../../styles/globalColors';
+@keyframes changeLogo {
 
+  0%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+@media screen and (max-height: 800px) {
+  .contactInfos{
+    margin-top: 30px !important;
+  }
+
+  .socialMediaIcons{
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+
+
+  }
+
+}
 .contactInfos{
 
   position: absolute;
@@ -86,37 +118,22 @@ i{
 
   width: 400px;
 
-  @media screen and(max-width: 900px) {
+  @media screen and(max-width: 1200px) {
     width: 300px;
-    
+
   }
 
-  @media screen and(max-width: 600px) {
+  @media screen and (max-width: 500px){
     width: 70vw;
+  }
 
+  @media screen and(max-height: 740px) {
+
+    margin-top: -40px;
   }
 }
 
-@keyframes changeLogo {
 
-  0%{
-    opacity: 1;
-  }
-  40%{
-    opacity: 1;
-  }
-  50%{
-    opacity: 0;
-
-  }
-  90%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-
-}
 .logoPicture2{
 
   position: absolute;
@@ -125,14 +142,18 @@ i{
 
   width: 400px;
 
-  @media screen and(max-width: 900px) {
+  @media screen and(max-width: 1200px) {
     width: 300px;
 
   }
 
-  @media screen and(max-width: 600px) {
+  @media screen and (max-width: 500px){
     width: 70vw;
+  }
 
+  @media screen and(max-height: 740px) {
+
+    margin-top: -40px;
   }
 }
 
@@ -167,14 +188,15 @@ i{
     margin-top: 100px;
 
     @media screen and (max-width: 1000px){
-
+      padding: 0 10vw;
       margin-top: 0;
 
     }
 
-    @media screen and (max-height: 800px){
 
-      margin-top: 50px;
+    @media screen and (max-height: 600px){
+
+      margin-top: 100px;
 
     }
 
@@ -218,7 +240,7 @@ i{
 
       margin: 0;
       position: relative;
-      margin-top: 100px;
+      margin-top: 50px;
 
     div {
       width: 100%;
@@ -227,22 +249,27 @@ i{
       display: flex;
       flex-direction: row;
 
+
     }
 
 
   }
+
   @media (max-height: 600px) {
 
     flex-direction: row;
     position: relative;
     margin-top: 50px;
+    margin-bottom: -40;
     display: none;
 
 
   }
 
-  @media (min-height: 1000px){
-    margin-top: 50%;
+
+
+  @media (min-height: 1000px) and (max-height: 1400px){
+    margin-top: 20vh;
   }
 
 
@@ -268,7 +295,7 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+   border-radius: 50%;
 
 
 

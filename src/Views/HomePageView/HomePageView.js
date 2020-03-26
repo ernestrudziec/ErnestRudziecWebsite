@@ -6,6 +6,8 @@ import HeroSection from "../../Components/HeroSection/HeroSection";
 import AboutMeSection from "../../Components/AboutMeSection/AboutMeSection";
 import "animate.css/animate.min.css";
 import MyWorksSection from "../../Components/MyWorksSection/MyWorksSection";
+import WhatICanSection from "../../Components/WhatICanSection/WhatICanSection";
+import FooterSection from "../../Components/FooterSection/FooterSection";
 
 const HomePageView = () => {
 
@@ -14,6 +16,8 @@ const HomePageView = () => {
     <HeroSection/>
    <AboutMeSection/>
    <MyWorksSection/>
+   <WhatICanSection/>
+   <FooterSection/>
 </>
 
     );

@@ -37,8 +37,8 @@ const AboutMeSection = () => {
 
         </section>
 
-    <div className={styles.aboutResponsiveWrapper}>
-        <img src={wave1} className={styles.waveTop}/>
+    <section className={styles.aboutResponsiveWrapper}>
+
 
         <div className={styles.contentWrapper2}>
 
@@ -73,8 +73,8 @@ const AboutMeSection = () => {
 
     </div>
 
-        <img src={wave2} className={styles.waveBottom}/>
-    </div>
+
+    </section>
 
 
 
