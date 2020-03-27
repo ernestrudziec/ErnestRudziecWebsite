@@ -20,7 +20,7 @@ const HeroSection = () => {
 
             <i className="fab fa-linkedin-in"></i>
 
-            <i className="fab fa-instagram"></i>
+                <a href="https://www.instagram.com/ernest_rudziec/"><i className="fab fa-instagram"></i></a>
             <i className="fab fa-dribbble"></i>
 
             <i className="fab fa-behance"></i>
@@ -39,16 +39,20 @@ const HeroSection = () => {
 
             <ScrollAnimation animateIn="fadeInDown" delay={500} animateOnce={true}>
             <h1>Front-end developer ‍💻 and UI/UX Designer 🎨</h1>
+
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn" delay={1200} animateOnce={true}>
+            <button className={styles.resume}>My resume</button>
             </ScrollAnimation>
         </header>
         <div className={styles.contactInfos} >
         <ScrollAnimation animateOnce={true} offset={0} animateIn="fadeInRight" delay={1500}>
 
 
-            <i className="fab fa-github"></i>
-            <i className="fas fa-address-card"></i>
-            <i className="fas fa-envelope"></i>
-            <i className="fas fa-phone"></i>
+            <a href="https://github.com/ernestrudziec"><i className="fab fa-github"></i></a>
+            <a href="/cv"><i className="fas fa-address-card"></i></a>
+            <a href="/contact"><i className="fas fa-envelope"></i></a>
+            <a href="/contact"><i className="fas fa-phone"></i></a>
 
 
         </ScrollAnimation>

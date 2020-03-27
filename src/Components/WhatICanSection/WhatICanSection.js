@@ -25,7 +25,7 @@ return(
 
             <article>
 
-                I focus on simplicity. I like elegant and easy to read design. When I need to, I can also use different colors and shapes.
+                I focus on simplicity. <strong> I like elegant and easy to read design. </strong> When I need to, I can also use different colors and shapes.
             </article>
 
 
@@ -75,7 +75,7 @@ return(
             <div className="fas fa-code"></div>
             <article>
                 {/*Porządek w kodzie i plikach to podstawa. Staram się zawsze wybierać <strong>najlepsze rozwiązanie do danej realizacji</strong>, które zapewni najlepszą efektywność.*/}
-                Order in code and files is the basis. I always try to choose the best solution for a given implementation that will ensure the best efficiency.
+                Order in code and files is the basis. I always try to choose the best solution for a given implementation that will ensure <strong>the best efficiency.</strong>
             </article>
 
             <h3>

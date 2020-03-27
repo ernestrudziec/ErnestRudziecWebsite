@@ -314,6 +314,26 @@ i{
 }
 
 
+.resume{
+
+  padding: 10px 50px;
+  font-size: 1rem;
+  background: $mint;
+  border-radius: 5px;
+  color: white;
+  font-family: Oxanium;
+  border-bottom: solid 3px transparent;
+  cursor: pointer;
+outline: none;
+  
+  &:hover{
+    border-bottom: solid 3px white;
+    background: $pink;
+    @include lightShadow;
+
+  }
+
+}
 @keyframes active-screen {
 
   0%{

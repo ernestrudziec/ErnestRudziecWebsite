@@ -15,8 +15,8 @@ const HomePageView = () => {
 <>
     <HeroSection/>
    <AboutMeSection/>
-   <MyWorksSection/>
    <WhatICanSection/>
+   <MyWorksSection/>
    <FooterSection/>
 </>
 

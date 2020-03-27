@@ -55,3 +55,7 @@ h1{
 strong{
     font-weight: 600;
 }
+
+a{
+    text-decoration: none;
+}
