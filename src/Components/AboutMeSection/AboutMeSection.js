@@ -18,12 +18,16 @@ const AboutMeSection = () => {
 
             <div className={styles.paragraphWrapper}>
 
-                <h1>Cześć, tu Ernest. Fajnie że wpadłeś 👋🏻</h1>
+                {/*<h1>Cześć, tu Ernest. Fajnie że wpadłeś 👋🏻</h1>*/}
+                <h1>Hi, I'm Ernest. Nice to meet you 👋🏻 </h1>
 
-                <p>Jestem początkującym <strong>front-end developerem</strong> ⌨️ oraz nieco bardziej doświadczonym <strong>graphic designerem</strong> ✏️ co daje mi możliwość tworzenia aplikacji webowych od podstaw całkowicie samodzielnie.</p>
+                {/*<p>Jestem początkującym <strong>front-end developerem</strong> ⌨️ oraz nieco bardziej doświadczonym <strong>graphic designerem</strong> ✏️ co daje mi możliwość tworzenia aplikacji webowych od podstaw całkowicie samodzielnie.</p>*/}
 
-                <p> W swojej pracy wykorzystuję <strong>najnowsze technologie</strong> 🚀 zapewniające doskonałą wydajność. Dbam o <strong>czystość i przejrzystość kodu</strong>, utrzymując przy tym odpowiednią <strong>semantykę, standardy oraz nazewnictwo</strong> np. (W3C, BEM, CamelCase). </p>
+                <p>I am a beginner front-end developer ⌨️ and a bit more experienced graphic designer ✏️ which gives me the opportunity to create web applications from scratch completely alone. </p>
 
+                {/*<p> W swojej pracy wykorzystuję <strong>najnowsze technologie</strong> 🚀 zapewniające doskonałą wydajność. Dbam o <strong>czystość i przejrzystość kodu</strong>, utrzymując przy tym odpowiednią <strong>semantykę, standardy oraz nazewnictwo</strong> np. (W3C, BEM, CamelCase). </p>*/}
+
+                <p>In my work I use the latest technologies 🚀 ensuring excellent performance. I care about the purity and transparency of the code, while maintaining appropriate semantics, standards and naming, e.g. (W3C, BEM, CamelCase).</p>
 
             </div>
             <div className={styles.pictureWrapper}>
@@ -48,8 +52,12 @@ const AboutMeSection = () => {
             </ScrollAnimation>
         <div className={styles.responsiveDescriptionRight}>
             <h1>Responsive Web Design 👨🏻‍💻</h1>
-        <p>Strony projektuję z myślą o <strong>poprawnym ich wyświetlaniu</strong> na każdym ekranie  💻
-            </p>
+
+        {/*<p>Strony projektuję z myślą o <strong>poprawnym ich wyświetlaniu</strong> na każdym ekranie  💻*/}
+        {/*    <p>*/}
+
+               <p> I design websites with a view to displaying them correctly on every screen 💻</p>
+
         </div>
 
         </div>
@@ -60,9 +68,12 @@ const AboutMeSection = () => {
 
             <div className={styles.responsiveDescriptionLeft}>
 
-                <h1>Ale dlaczego i po co? ✅ </h1>
+                {/*<h1>Ale dlaczego i po co? ✅ </h1>*/}
+                <h1>But why? ✅ </h1>
 
-                <p>Jest to istotne, ponieważ dziś prawdziwą siłę internetu stanowią użytkownicy mobilni 📱 korzystający z małych ekranów telefonów czy tabletów.</p>
+                {/*<p>Jest to istotne, ponieważ dziś prawdziwą siłę internetu stanowią użytkownicy mobilni 📱 korzystający z małych ekranów telefonów czy tabletów.</p>*/}
+
+                <p>This is important because today the real power of the Internet is mobile users 📱 using small screens of phones or tablets.</p>
 
             </div>
             <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>

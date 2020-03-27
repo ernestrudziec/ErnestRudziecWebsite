@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44992181-08df-480b-bdc4-840d951546a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/FooterSection/FooterSection.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/FooterSection/FooterSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FooterSection/FooterSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/FooterSection/FooterSection.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584872425481</updated>
       <workItem from="1584872428043" duration="23478000" />
-      <workItem from="1584969258712" duration="49326000" />
+      <workItem from="1584969258712" duration="50479000" />
     </task>
     <servers />
   </component>
@@ -105,22 +105,22 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="150" y="272" key="EditFileWatcherDialog/0.23.1680.969@0.23.1680.969" timestamp="1585262623228" />
-    <state width="1069" height="241" key="GridCell.Tab.0.bottom" timestamp="1585263150919">
+    <state width="1536" height="241" key="GridCell.Tab.0.bottom" timestamp="1585313803096">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1069" height="241" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1585263150919" />
-    <state width="1069" height="241" key="GridCell.Tab.0.center" timestamp="1585263150918">
+    <state width="1536" height="241" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1585313803096" />
+    <state width="1536" height="241" key="GridCell.Tab.0.center" timestamp="1585313803095">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1069" height="241" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1585263150918" />
-    <state width="1069" height="241" key="GridCell.Tab.0.left" timestamp="1585263150917">
+    <state width="1536" height="241" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1585313803095" />
+    <state width="1536" height="241" key="GridCell.Tab.0.left" timestamp="1585313803094">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1069" height="241" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1585263150917" />
-    <state width="1069" height="241" key="GridCell.Tab.0.right" timestamp="1585263150918">
+    <state width="1536" height="241" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1585313803094" />
+    <state width="1536" height="241" key="GridCell.Tab.0.right" timestamp="1585313803095">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1069" height="241" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1585263150918" />
+    <state width="1536" height="241" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1585313803095" />
     <state x="0" y="156" key="SettingsEditor" timestamp="1585251555686">
       <screen x="0" y="23" width="1680" height="969" />
     </state>

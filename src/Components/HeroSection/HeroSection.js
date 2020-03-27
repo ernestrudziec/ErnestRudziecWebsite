@@ -56,7 +56,12 @@ const HeroSection = () => {
 
 
 
-        <a href="#about-me"><div className={styles.scrollDown}>trochę o mnie<i className="fas fa-arrow-down"></i></div></a>
+        <a href="#about-me"><div className={styles.scrollDown}>
+
+            {/*trochę o mnie*/}
+            about me
+
+            <i className="fas fa-arrow-down"></i></div></a>
         <img className={styles.lightPicture} src={lightPicture}/>
         <img className={styles.programmerPicture} src={programmerPicture}/>
 
