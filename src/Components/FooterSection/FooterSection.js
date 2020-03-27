@@ -10,7 +10,7 @@ const FooterSection = () => {
 <footer className={styles.wrapper}>
 
 
-    <aside>+48 785 260 880</aside><div>Made with <span>❤️</span> by <img alt="logo" src={logo}/></div><aside>ernest.rudziec@gmail.com</aside>
+    <aside><i className="fas fa-phone"></i> +48 785 260 880</aside><div>Made with <span>❤️</span> by <img alt="logo" src={logo}/></div><aside><i className="fas fa-envelope"></i> ernest.rudziec@gmail.com</aside>
 
 
 </footer>

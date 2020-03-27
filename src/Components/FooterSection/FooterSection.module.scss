@@ -8,11 +8,24 @@
   background: $dark-blue;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
   font-family: Oxanium;
   font-weight: 600;
+
+  @media screen and (max-width: 1200px){
+    flex-direction: column-reverse;
+
+  }
+
+  aside{
+    margin: 30px 0;
+    font-size: 1.5em;
+i{
+  margin: 0 10px;
+}
+  }
+
 
   div {
     display: flex;
@@ -22,6 +35,7 @@
     padding-left: 50px;
     border-right: solid 1px white;
     padding-right: 50px;
+
 
     align-items: center;
     font-size: 1em;
