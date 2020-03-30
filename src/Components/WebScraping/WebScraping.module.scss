@@ -1,4 +1,4 @@
-.wrapper{
+.polandWrapper{
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -18,77 +18,162 @@
 
     }
   }
-}
 
-
-
-
-.confirmed{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40vh;
-  width: 100%;
-  background: red;
-  font-weight: 600;
-  color: white;
-
-}
-
-.deaths{
-
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-
-  background: #131313;
-  color: white;
-
-
-
-
-}
-
-.dailyCases{
-  color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-
-  @media screen and (max-width: 600px){
-    flex-direction: column;
+  .confirmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    background: red;
+    font-weight: 600;
+    color: white;
 
   }
 
-}
+  .deaths{
 
-.dailyDeaths{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 
-  @media screen and (max-width: 600px){
-   flex-direction: column;
+    background: #131313;
+    color: white;
+
+
+
 
   }
-}
 
-.daily{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
+  .dailyCases{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
 
+    @media screen and (max-width: 600px){
+      flex-direction: column;
 
-  b{
-    font-size: 10vw;
-    @media screen and (min-width: 900px){
-      font-size: 5vw;
+    }
+
+  }
+
+  .dailyDeaths{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+
+    @media screen and (max-width: 600px){
+      flex-direction: column;
+
     }
   }
 
+  .daily{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+
+
+    b{
+      font-size: 10vw;
+      @media screen and (min-width: 900px){
+        font-size: 5vw;
+      }
+    }
+
+  }
+
 }
+
+
+.polandRegionsWrapper{
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.regionWrapper{
+
+  color: white;
+  background: red;
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  font-family: Oxanium;
+  margin:1px 5px;
+  border-radius: 5px;
+
+
+
+  p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+
+    @media screen and(max-width: 600px) {
+      font-size: 0.7em;
+    }
+
+  }
+
+  &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
+    background: #fff2f2;
+    color: red;
+    font-weight: 700 !important;
+    height: 60px;
+    font-size: 1.4em;
+    
+    @media screen and(max-width: 600px) {
+      font-size: 1.3em;
+    }
+
+
+    .casesIMG, .deathsIMG{
+      height: 20px;
+      margin: 0px 5px;
+    }
+
+
+  }
+
+  @media screen and (min-width: 700px){
+    max-width: 500px;
+
+  }
+
+  div{
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.casesIMG, .deathsIMG{
+ height: 15px;
+  margin: 0px 5px;
+
+
+}
+
+
+.regions{
+  margin-left: 5%;
+}
+
+.cases{
+  margin-right: 5%;
+
+}
+
