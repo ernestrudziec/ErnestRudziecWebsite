@@ -85,7 +85,7 @@ class WebScraping extends React.Component {
 
    async componentDidMount() {
 
-            //this.fetchPoland();
+            this.fetchPoland();
             this.fetchPolandRegions();
 
 
