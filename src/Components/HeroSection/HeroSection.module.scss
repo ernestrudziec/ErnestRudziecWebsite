@@ -166,6 +166,12 @@ i{
   padding: 0px 100px;
 
   justify-content: flex-start;
+
+  @media screen and (min-width: 1400px){
+    justify-content: center;
+    padding-bottom: 20%;
+  }
+
   flex-direction: column;
   align-items: center;
 
@@ -325,7 +331,7 @@ i{
   border-bottom: solid 3px transparent;
   cursor: pointer;
 outline: none;
-
+transition: 0.3s;
   &:hover{
     border-bottom: solid 3px white;
     background: $pink;

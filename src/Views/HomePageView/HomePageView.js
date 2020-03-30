@@ -8,16 +8,18 @@ import "animate.css/animate.min.css";
 import MyWorksSection from "../../Components/MyWorksSection/MyWorksSection";
 import WhatICanSection from "../../Components/WhatICanSection/WhatICanSection";
 import FooterSection from "../../Components/FooterSection/FooterSection";
+import WebScraping from "../../Components/WebScraping/WebScraping";
 
 const HomePageView = () => {
 
     return(
 <>
-    <HeroSection/>
-   <AboutMeSection/>
-   <WhatICanSection/>
-   <MyWorksSection/>
-   <FooterSection/>
+   <WebScraping/>
+   {/* <HeroSection/>*/}
+   {/*<AboutMeSection/>*/}
+   {/*<WhatICanSection/>*/}
+   {/*<MyWorksSection/>*/}
+   {/*<FooterSection/>*/}
 </>
 
     );
