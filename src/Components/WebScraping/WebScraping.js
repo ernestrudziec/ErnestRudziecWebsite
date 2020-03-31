@@ -400,7 +400,8 @@ class WebScraping extends React.Component {
 
                 <div className={styles.countryTotalWrapper}>
 
-                    <header>Koronawirus na świecie (% Ozdrowieńców)</header>
+                    <header>SARS-CoV-2 na świecie
+                         (+procent wyzdrowiałych)</header>
 
                     {
 

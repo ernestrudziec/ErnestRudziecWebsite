@@ -40,6 +40,10 @@ $redColor: #c21807;
   flex-wrap: wrap;
   background: white;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1300px){
+    flex-direction: column;
+  }
 }
 
 
@@ -397,7 +401,7 @@ $redColor: #c21807;
   }
 
   @media screen and (min-width: 1000px){
-    width: 90%;
+    width: 100%;
 
   }
 
@@ -430,11 +434,20 @@ $redColor: #c21807;
 }
 
 
+.recoveredCountries{
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
 .countryTotalWrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: auto;
+  margin-bottom: 40px;
+
+
 
 
   header{
@@ -442,11 +455,15 @@ $redColor: #c21807;
     color: white;
     padding: 10px;
     border-radius: 10px;
+    margin: 0 15px;
     margin-bottom: 40px;
+
     @include mediumShadow;
+
   }
 
-  @media screen and (min-width: 1000px){
+  @media screen and (max-width: 600px){
+  text-align: center;
 
   }
 
