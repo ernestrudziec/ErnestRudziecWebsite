@@ -263,13 +263,12 @@ class WebScraping extends React.Component {
 
    async componentDidMount() {
 
-
         await this.fetchTotalCountries();
        await this.fetchPoland();
-       await this.fetchPolandRegions();
-       await this.fetchTotalDeaths();
-       await this.fetchTotalRecovered();
-       await this.fetchTotalCases();
+       // await this.fetchPolandRegions();
+       // await this.fetchTotalDeaths();
+       // await this.fetchTotalRecovered();
+       // await this.fetchTotalCases();
 
 
 
@@ -301,22 +300,56 @@ class WebScraping extends React.Component {
         return(
             <>
 
-                <div className={styles.polandWrapper}>
+                <div className={styles.mainWrapper}>
+                    <header><b>Koronawirus</b> W Polsce i na Świecie.</header>
+                    <div className={styles.polandWrapper}>
+
+                        <div className={styles.polandCasesWrapper}>
+                        <label>Przypadki w Polsce:</label>
+                        <data>{this.state.confirmed}</data>
+                        </div>
+
+
+                        <div className={styles.polandDaily}>
+
+                            <div className={styles.dailyDeaths}>
+                                <label>ZMARŁO DZISIAJ: </label>
+                                <data>+{this.state.dailyDeaths}</data>
+                                <img src={deaths}/>
+                            </div>
+
+                            <div className={styles.dailyCases}>
+                                <label>NOWE PRZYPADKI: </label>
+                                <data>+{this.state.dailyCases}</data>
+
+                            </div>
 
 
 
-                    <div className={styles.confirmed}><b>{this.state.confirmed}</b> <div>przypadków</div></div>
-                    <div className={styles.deathsAndRecovered}>
-                    <div className={styles.deaths}><b>{this.state.deaths} </b><div>zmarło</div></div>
-                        <div className={styles.recovered}><b>{this.state.recovered}</b><div>wyzdrowiało</div></div>
+                        </div>
+
+                        <div className={styles.deathsAndRecoveredWrapper}>
+
+                            <div>
+                            <label>ZMARŁO:</label>
+                            <div className={styles.deathsPoland}>{this.state.deaths} </div>
+                            </div>
+
+                            <div>
+                            <label>WYZDROWIAŁO:</label>
+                            <div className={styles.recoveredPoland}>{this.state.recovered}</div>
+                            </div>
+
+                        </div>
+
+
+                        <caption>AKTUALNE NA: 31.03.2020r. 15:55</caption>
                     </div>
-
-                    <div className={styles.daily}>
-                        <div className={styles.dailyCases}><b> +{this.state.dailyCases}</b><div>nowe przypadki</div></div>
-                        <div className= {styles.dailyDeaths}><b> +{this.state.dailyDeaths}</b> <div>nowe zgony</div> </div>
-                    </div>
-
                 </div>
+
+
+
+                <div className={styles.dataTablesWrapper}>
 
                 <div className={styles.polandRegionsWrapper}>
 
@@ -356,10 +389,10 @@ class WebScraping extends React.Component {
 
                         this.state.totalCountriesArray.map((country, i) => {
 
-                            if (i<10) {
+                            if (i<15 || country.Country_Region === 'Poland'){
                                 return (
 
-                                    <div key={i + 'heh'} className={styles.regionWrapper}>
+                                    <div key={i + 'heh'} className={country.Country_Region === 'Poland' ?  styles.regionWrapperPoland : styles.regionWrapper}>
 
                                         <div className={styles.regions}>
                                             {i + 1}.<p>{country.Country_Region}</p>
@@ -392,6 +425,10 @@ class WebScraping extends React.Component {
 
 
                 </div>
+
+                </div>
+
+
             </>
         );
     }

@@ -1,138 +1,219 @@
-.polandWrapper{
-  height: 100vh;
+$redColor: #c21807;
+
+@mixin borderRadius{
+  border-radius: 20px;
+}
+
+@mixin lightShadow{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@mixin mediumShadow{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.01);
+}
+
+@mixin hardShadow{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.01);
+}
+
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataTablesWrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+.mainWrapper{
+  height: auto;
+  margin-bottom: 30px;
   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  border-radius: 20px;
 
 
-  b{
-    font-weight: 900;
+  header{
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Oxanium;
-    font-size: 20vw;
-    margin-right: 5px;
+    background:  $redColor;
+    color: white;
+    width: 90vw;
+    padding: 10px;
+    flex-direction: column;
+    text-transform: uppercase;
 
-    @media screen and (min-width: 900px){
-      font-size: 15vw;
-
+    b{
+    font-size: 1.5em;
     }
   }
 
-  .confirmed{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    width: 100%;
-    background: red;
-    font-weight: 600;
-    color: white;
+.polandDaily{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  label{
+    font-size: 0.8em;
 
   }
 
-  .deathsAndRecovered{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-
+  div{
+    width: 40%;
+    margin: 10px;
 
   }
 
-  .displayNone{
-    display: none;
-    overflow: hidden;
-
-  }
-
-  .recovered{
-
-    height: 30vh;
-  width: 50vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #131313;
-      color: #49E20E;
+  data{
+    font-weight: 900;
+    font-size: 2em;
+    font-family: Oxanium;
+    margin-left: 10px;
 
     @media screen and (max-width: 600px){
-      flex-direction: column;
-
-      div{
-        margin-top: -15px;
-      }
+      font-size: 1.2em;
     }
-
-
   }
 
-  .deaths{
-
-    height: 30vh;
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media screen and (max-width: 600px){
-
-      flex-direction: column;
-
-      div{
-        margin-top: -15px;
-      }
-    }
-
-
-    background: #131313;
-    color: white;
-
-
-
-
+  img{
+    height: 25px;
+    margin-left: 5px;
   }
 
   .dailyCases{
-    color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
+   @include flexCenter;
 
-    @media screen and (max-width: 600px){
-      flex-direction: column;
+    data{
+      color: $redColor;
 
     }
 
   }
 
   .dailyDeaths{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
 
-    @media screen and (max-width: 600px){
-      flex-direction: column;
+    @include flexCenter;
 
+
+  }
+}
+
+  .polandWrapper{
+    @include mediumShadow;
+    @include flexCenter;
+    @include borderRadius;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    padding-bottom: 50px;
+    position: relative;
+
+
+    caption{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10px;
+      margin: 0;
+      opacity: 0.3;
+      font-size: 0.9em;
+      width: 100%;
+      font-family: Oxanium;
     }
+
   }
 
-  .daily{
+  .polandCasesWrapper{
+
+   @include flexCenter;
+    flex-direction: column;
+
+
+
+
+    label{
+
+      margin: 0;
+      text-transform: uppercase;
+
+    }
+
+    data{
+      margin: -20px;
+      font-family: Oxanium;
+      font-size: 5em;
+      color: $redColor;
+      font-weight: 800;
+
+    }
+
+
+
+
+  }
+
+
+
+  .deathsAndRecoveredWrapper{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
 
 
-    b{
-      font-size: 10vw;
-      @media screen and (min-width: 900px){
-        font-size: 5vw;
+    div{
+      display: flex;
+      width: 40%;
+      @include flexCenter;
+      flex-direction: column;
+      margin: 0px 10px;
+
+      div {
+        height: 60px;
+        font-size: 2em;
+        font-weight: 900;
+        width: 100%;
+        font-family: Oxanium;
       }
     }
 
+    .deathsPoland{
+      background: black;
+      color: white;
+      border-radius: 5px;
+
+
+    }
+
+    .recoveredPoland{
+      background: #00b224;
+      color: white;
+      border-radius: 5px;
+    }
+
   }
+
+
+
+
+
 
 }
 
@@ -144,6 +225,65 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+
+}
+
+
+
+.regionWrapperPoland {
+
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  font-family: Oxanium;
+  margin:1px 5px;
+  border-radius: 5px;
+
+  background: #fff2f2;
+  color: red;
+  font-weight: 700 !important;
+  height: 60px;
+  font-size: 1.4em;
+
+  @media screen and(max-width: 600px) {
+    font-size: 1.3em;
+
+  }
+
+
+  .casesIMG, .deathsIMG{
+    height: 20px;
+    margin: 0px 5px;
+  }
+
+  p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+
+    @media screen and(max-width: 600px) {
+      font-size: 0.7em;
+    }
+
+  }
+
+  .casesIMG, .deathsIMG{
+    height: 20px;
+    margin: 0px 5px;
+  }
+
+  @media screen and (min-width: 700px){
+    max-width: 500px;
+
+  }
+
+  div{
+
+    display: flex;
+    align-items: center;
+  }
 
 }
 
@@ -159,6 +299,8 @@
   font-family: Oxanium;
   margin:1px 5px;
   border-radius: 5px;
+
+
 
 
 
@@ -181,7 +323,7 @@
     font-size: 1.4em;
     
     @media screen and(max-width: 600px) {
-      font-size: 1.05em;
+      font-size: 1.3em;
 
     }
 
