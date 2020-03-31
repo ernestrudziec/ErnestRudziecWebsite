@@ -324,13 +324,13 @@ class WebScraping extends React.Component {
 
                             <div className={styles.dailyDeaths}>
                                 <label>ZMARŁO DZISIAJ: </label>
-                                <data>+{this.state.dailyDeaths}</data>
-                                <img src={deaths}/>
+                                <data>{this.state.dailyDeaths === null ?  + '0' : '+' + this.state.dailyDeaths + '†'} </data>
+
                             </div>
 
                             <div className={styles.dailyCases}>
                                 <label>NOWE PRZYPADKI: </label>
-                                <data>+{this.state.dailyCases}</data>
+                                <data>{this.state.dailyCases === null ? '0' : '+' + this.state.dailyCases }</data>
 
                             </div>
 
@@ -342,7 +342,7 @@ class WebScraping extends React.Component {
 
                             <div>
                             <label>ZMARŁO:</label>
-                            <div className={styles.deathsPoland}>{this.state.deaths} </div>
+                            <div className={styles.deathsPoland}>{this.state.deaths} † </div>
                             </div>
 
                             <div>
@@ -352,7 +352,7 @@ class WebScraping extends React.Component {
 
                         </div>
 
-                        <div className={styles.deathRate}>W Polsce co<span>{Math.ceil(this.state.confirmed / this.state.deaths)}</span> zakażona osoba umiera z powodu koronawirusa.</div>
+                        <div className={styles.deathRate}>W Polsce co<span>{Math.ceil(this.state.confirmed / this.state.deaths)}</span> zakażona osoba umiera † z powodu koronawirusa.</div>
                         <div className={styles.deathRate}>Do tej pory wyzdrowiało <span>{this.Round(this.state.recovered / this.state.confirmed, 4)}%</span> chorych.</div>
                         <div className={styles.deathRate}><span>{this.Round(this.state.confirmed / 38383000, 6)}%</span> obywateli Polski jest zarażonych.</div>
                         <div className={styles.deathRate}>Co oznacza, że co <span>{this.numberParse(Math.ceil(38383000 / this.state.confirmed))}</span> polak otrzymał pozytywny wynik testu na wirusa SARS-CoV-2.</div>
@@ -384,7 +384,7 @@ class WebScraping extends React.Component {
                                                  {region.SUM_Confirmed}
                                              </div>
                                          <div className={styles.regionDeaths}>
-                                             <img alt='deaths: ' src={deaths} className={styles.deathsIMG}/>{region.SUM_Deaths}
+                                              <span className={styles.cross}>†</span>{ + region.SUM_Deaths}
                                     </div>
 
                                     </div>
@@ -425,7 +425,7 @@ class WebScraping extends React.Component {
                                                 {this.numberParse(country.Confirmed)}
                                                 </data>
 
-                                        <div className={styles.skull}><img alt='deaths: ' src={deaths} className={styles.deathsIMGCountries}/></div>
+                                        <div className={styles.skull}>†</div>
 
                                         <data className={styles.countryDeaths}>
 
