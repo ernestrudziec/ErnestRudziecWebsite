@@ -45,7 +45,11 @@ class WebScraping extends React.Component {
 })
 .then(response => response.json())
     .then(json => {
-        // console.log(json.features[json.features.length-1].attributes);
+        console.log(json.features[json.features.length-1].attributes);
+
+        console.log("lastUpdated: " + json.features[json.features.length-1].attributes.Aktualizacja);
+        this.setState({deaths: json.features[json.features.length-1].attributes.Aktualizacja});
+
         console.log("confPoland: " + json.features[json.features.length-1].attributes.Potwierdzone);
         this.setState({confirmed: json.features[json.features.length-1].attributes.Potwierdzone});
         console.log("deathsPoland: " + json.features[json.features.length-1].attributes.Smiertelne);
@@ -261,14 +265,19 @@ class WebScraping extends React.Component {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
     }
 
+    Round = (n, k) => {
+        let factor = Math.pow(10, k);
+        return Math.round(n*factor)/factor;
+    }
+
    async componentDidMount() {
 
         await this.fetchTotalCountries();
        await this.fetchPoland();
-       // await this.fetchPolandRegions();
-       // await this.fetchTotalDeaths();
-       // await this.fetchTotalRecovered();
-       // await this.fetchTotalCases();
+       await this.fetchPolandRegions();
+       await this.fetchTotalDeaths();
+       await this.fetchTotalRecovered();
+       await this.fetchTotalCases();
 
 
 
@@ -299,6 +308,7 @@ class WebScraping extends React.Component {
 
         return(
             <>
+                <div className={styles.totalWrapper}>
 
                 <div className={styles.mainWrapper}>
                     <header><b>Koronawirus</b> W Polsce i na Świecie.</header>
@@ -342,8 +352,12 @@ class WebScraping extends React.Component {
 
                         </div>
 
+                        <div className={styles.deathRate}>W Polsce co<span>{Math.ceil(this.state.confirmed / this.state.deaths)}</span>osoba umiera z powodu koronawirusa.</div>
+                        <div className={styles.deathRate}>Do tej pory wyzdrowiało <span>{this.Round(this.state.recovered / this.state.confirmed, 4)}%</span> chorych.</div>
+                        <div className={styles.deathRate}><span>{this.Round(this.state.confirmed / 38383000, 6)}%</span> obywateli Polski jest zarażonych.</div>
+                        <div className={styles.deathRate}>Co oznacza, że co <span>{this.numberParse(Math.ceil(38383000 / this.state.confirmed))}</span> polak otrzymał pozytywny wynik testu na wirusa SARS-CoV-2.</div>
 
-                        <caption>AKTUALNE NA: 31.03.2020r. 15:55</caption>
+                        <caption>AKTUALIZACJA: {Date(this.state.lastUpdate)}</caption>
                     </div>
                 </div>
 
@@ -352,6 +366,8 @@ class WebScraping extends React.Component {
                 <div className={styles.dataTablesWrapper}>
 
                 <div className={styles.polandRegionsWrapper}>
+
+                    <header>Koronawirus w Polsce (Najwięcej przypadków)</header>
 
                     {
                         this.state.polandRegions.map((region, i) => {
@@ -384,12 +400,13 @@ class WebScraping extends React.Component {
 
                 <div className={styles.polandRegionsWrapper}>
 
+                    <header>Koronawirus na świecie (Najwięcej przypadków)</header>
 
                     {
 
                         this.state.totalCountriesArray.map((country, i) => {
 
-                            if (i<15 || country.Country_Region === 'Poland'){
+                            if (i<14 || country.Country_Region === 'Poland'){
                                 return (
 
                                     <div key={i + 'heh'} className={country.Country_Region === 'Poland' ?  styles.regionWrapperPoland : styles.regionWrapper}>
@@ -428,7 +445,7 @@ class WebScraping extends React.Component {
 
                 </div>
 
-
+                </div>
             </>
         );
     }

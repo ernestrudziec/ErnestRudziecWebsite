@@ -22,11 +22,24 @@ $redColor: #c21807;
   align-items: center;
 }
 
-.dataTablesWrapper{
+.totalWrapper{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dataTablesWrapper{
+
+  @include mediumShadow;
+  border-radius: 20px;
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  background: white;
+  margin-bottom: 30px;
 }
 
 
@@ -122,7 +135,7 @@ $redColor: #c21807;
     flex-direction: column;
     width: 90vw;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     position: relative;
 
 
@@ -133,9 +146,11 @@ $redColor: #c21807;
       bottom: 10px;
       margin: 0;
       opacity: 0.3;
-      font-size: 0.9em;
+      font-size: 0.8em;
       width: 100%;
       font-family: Oxanium;
+
+
     }
 
   }
@@ -194,6 +209,7 @@ $redColor: #c21807;
       }
     }
 
+
     .deathsPoland{
       background: black;
       color: white;
@@ -210,6 +226,35 @@ $redColor: #c21807;
 
   }
 
+  .deathRate{
+    margin: 20px 5px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1200px){
+      display: inline;
+      margin: 15px 5px;
+
+    }
+
+    span{
+
+      font-size: 1.5em;
+
+      @media screen and (max-width: 700px){
+        font-size: 1em;
+        display: inline;
+
+      }
+      margin: 0 3px;
+      font-weight: 900;
+      font-family: Oxanium;
+      color: $redColor;
+    }
+  }
+
 
 
 
@@ -219,12 +264,21 @@ $redColor: #c21807;
 
 
 .polandRegionsWrapper{
-  height: 100vh;
+
+  margin: 40px 0;
   background: white;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+
+  header{
+    background: $redColor;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
 
 }
 
@@ -232,7 +286,9 @@ $redColor: #c21807;
 
 .regionWrapperPoland {
 
-  width: 95vw;
+
+
+  width: 88vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -240,11 +296,10 @@ $redColor: #c21807;
   font-family: Oxanium;
   margin:1px 5px;
   border-radius: 5px;
-
   background: #fff2f2;
   color: red;
   font-weight: 700 !important;
-  height: 60px;
+  height: 62px;
   font-size: 1.4em;
 
   @media screen and(max-width: 600px) {
@@ -274,9 +329,9 @@ $redColor: #c21807;
     margin: 0px 5px;
   }
 
-  @media screen and (min-width: 700px){
-    max-width: 500px;
+  @media screen and (min-width: 1000px){
 
+    width: 90%;
   }
 
   div{
@@ -290,8 +345,8 @@ $redColor: #c21807;
 .regionWrapper{
 
   color: white;
-  background: red;
-  width: 95vw;
+  background: $redColor;
+  width: 88vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,7 +372,7 @@ $redColor: #c21807;
 
   &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3) {
     background: #fff2f2;
-    color: red;
+    color: $redColor;
     font-weight: 700 !important;
     height: 60px;
     font-size: 1.4em;
@@ -336,8 +391,8 @@ $redColor: #c21807;
 
   }
 
-  @media screen and (min-width: 700px){
-    max-width: 500px;
+  @media screen and (min-width: 1000px){
+    width: 90%;
 
   }
 
