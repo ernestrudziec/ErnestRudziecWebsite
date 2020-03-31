@@ -3,7 +3,7 @@ import Mercury from "@postlight/mercury-parser";
 import $ from 'jquery';
 import styles from './WebScraping.module.scss';
 import deaths from '../../assets/svg/death.svg';
-import cases from '../../assets/svg/virus.svg';
+
 
 let html = null;
 
@@ -352,7 +352,7 @@ class WebScraping extends React.Component {
 
                         </div>
 
-                        <div className={styles.deathRate}>W Polsce co<span>{Math.ceil(this.state.confirmed / this.state.deaths)}</span>osoba umiera z powodu koronawirusa.</div>
+                        <div className={styles.deathRate}>W Polsce co<span>{Math.ceil(this.state.confirmed / this.state.deaths)}</span> zakażona osoba umiera z powodu koronawirusa.</div>
                         <div className={styles.deathRate}>Do tej pory wyzdrowiało <span>{this.Round(this.state.recovered / this.state.confirmed, 4)}%</span> chorych.</div>
                         <div className={styles.deathRate}><span>{this.Round(this.state.confirmed / 38383000, 6)}%</span> obywateli Polski jest zarażonych.</div>
                         <div className={styles.deathRate}>Co oznacza, że co <span>{this.numberParse(Math.ceil(38383000 / this.state.confirmed))}</span> polak otrzymał pozytywny wynik testu na wirusa SARS-CoV-2.</div>
@@ -367,7 +367,7 @@ class WebScraping extends React.Component {
 
                 <div className={styles.polandRegionsWrapper}>
 
-                    <header>Koronawirus w Polsce (Najwięcej przypadków)</header>
+                    <header>Koronawirus w Polsce (Województwa)</header>
 
                     {
                         this.state.polandRegions.map((region, i) => {
@@ -381,10 +381,10 @@ class WebScraping extends React.Component {
                                     <div className={styles.cases}>
 
                                             <div className={styles.regionConfirmed}>
-                                                 {region.SUM_Confirmed} <img alt='cases: ' src={cases} className={styles.casesIMG} />
+                                                 {region.SUM_Confirmed}
                                              </div>
                                          <div className={styles.regionDeaths}>
-                                             {region.SUM_Deaths} <img alt='deaths: ' src={deaths} className={styles.deathsIMG}/>
+                                             <img alt='deaths: ' src={deaths} className={styles.deathsIMG}/>{region.SUM_Deaths}
                                     </div>
 
                                     </div>
@@ -398,9 +398,9 @@ class WebScraping extends React.Component {
 
                 </div>
 
-                <div className={styles.polandRegionsWrapper}>
+                <div className={styles.countryTotalWrapper}>
 
-                    <header>Koronawirus na świecie (Najwięcej przypadków)</header>
+                    <header>Koronawirus na świecie (% Ozdrowieńców)</header>
 
                     {
 
@@ -409,26 +409,36 @@ class WebScraping extends React.Component {
                             if (i<14 || country.Country_Region === 'Poland'){
                                 return (
 
-                                    <div key={i + 'heh'} className={country.Country_Region === 'Poland' ?  styles.regionWrapperPoland : styles.regionWrapper}>
+                                    <div key={i + 'heh'} className={country.Country_Region === 'Poland'  || i<3 ?  styles.countryWrapperContrast : styles.countryWrapper}>
 
-                                        <div className={styles.regions}>
-                                            {i + 1}.<p>{country.Country_Region}</p>
-                                        </div>
 
-                                        <div className={styles.cases}>
+                                           <label>{i + 1}.</label>
 
-                                            <div className={styles.regionConfirmed}>
-                                                <img alt='cases: ' src={cases} className={styles.casesIMG}/>
+                                        <p>{country.Country_Region.toUpperCase()}</p>
+
+                                           <data className={styles.recoveredCountries}>
+                                               {this.Round(country.Recovered / country.Confirmed * 100, 2)}%
+                                           </data>
+
+                                                <data>
                                                 {this.numberParse(country.Confirmed)}
-                                            </div>
-                                            <div className={styles.regionDeaths}>
-                                                <img alt='deaths: ' src={deaths} className={styles.deathsIMG}/>
+                                                </data>
+
+                                        <div className={styles.skull}><img alt='deaths: ' src={deaths} className={styles.deathsIMGCountries}/></div>
+
+                                        <data className={styles.countryDeaths}>
+
                                                 {this.numberParse(country.Deaths)}
-                                            </div>
+
+                                        </data>
+
+
+
+
 
                                         </div>
 
-                                    </div>
+
                                 );
                             }
 

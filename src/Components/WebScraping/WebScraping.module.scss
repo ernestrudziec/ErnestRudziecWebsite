@@ -227,7 +227,7 @@ $redColor: #c21807;
   }
 
   .deathRate{
-    margin: 20px 5px;
+    margin: 10px 5px;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -278,6 +278,11 @@ $redColor: #c21807;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 40px;
+    @include mediumShadow;
+  }
+
+  @media screen and (min-width:1000px) {
+  width: 40%;
   }
 
 }
@@ -285,14 +290,12 @@ $redColor: #c21807;
 
 
 .regionWrapperPoland {
-
-
-
+  @include mediumShadow;
   width: 88vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+
   font-family: Oxanium;
   margin:1px 5px;
   border-radius: 5px;
@@ -303,10 +306,14 @@ $redColor: #c21807;
   font-size: 1.4em;
 
   @media screen and(max-width: 600px) {
-    font-size: 1.3em;
+    font-size: 1em;
 
   }
 
+  @media screen and (min-width: 1000px){
+
+    width: 90% !important;
+  }
 
   .casesIMG, .deathsIMG{
     height: 20px;
@@ -329,10 +336,7 @@ $redColor: #c21807;
     margin: 0px 5px;
   }
 
-  @media screen and (min-width: 1000px){
 
-    width: 90%;
-  }
 
   div{
 
@@ -342,8 +346,14 @@ $redColor: #c21807;
 
 }
 
-.regionWrapper{
+.deathsIMGCountries{
+  height: 15px;
 
+
+}
+
+.regionWrapper{
+  @include mediumShadow;
   color: white;
   background: $redColor;
   width: 88vw;
@@ -365,7 +375,7 @@ $redColor: #c21807;
     font-size: 0.8em;
 
     @media screen and(max-width: 600px) {
-      font-size: 0.7em;
+      font-size: 0.6em;
     }
 
   }
@@ -375,17 +385,12 @@ $redColor: #c21807;
     color: $redColor;
     font-weight: 700 !important;
     height: 60px;
-    font-size: 1.4em;
-    
-    @media screen and(max-width: 600px) {
-      font-size: 1.3em;
-
-    }
-
 
     .casesIMG, .deathsIMG{
       height: 20px;
       margin: 0px 5px;
+
+
     }
 
 
@@ -397,7 +402,10 @@ $redColor: #c21807;
   }
 
   div{
+    @media screen and(max-width: 350px) {
+      font-size: 0.9em;
 
+    }
     display: flex;
     align-items: center;
   }
@@ -418,5 +426,123 @@ $redColor: #c21807;
 .cases{
   margin-right: 5%;
 
+
 }
 
+
+.countryTotalWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  header{
+    background: $redColor;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    @include mediumShadow;
+  }
+
+  @media screen and (min-width: 1000px){
+
+  }
+
+
+}
+
+.countryWrapperContrast{
+  background: #fff2f2 !important;
+  color: $redColor !important;
+  font-weight: 700 !important;
+  height: 60px !important;
+  font-size: 1.4em;
+
+  @media screen and(max-width: 600px) {
+    font-size: 1.3em;
+
+  }
+
+
+  .casesIMG, .deathsIMG{
+    height: 20px;
+    margin: 0px 5px;
+
+
+  }
+
+
+
+}
+
+.countryWrapper, .countryWrapperContrast{
+  @include mediumShadow;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 10fr 3fr 4fr 2fr 3fr;
+  @media screen and (max-width: 600px) {
+  grid-template-columns: 0.5fr 5fr 2fr 2fr 1fr 2fr;
+}
+  @media screen and (max-width: 370px) {
+    grid-template-columns: 1fr 3fr 3fr 3fr 0.5fr 3.5fr;
+    grid-column-gap: 2px;
+    padding: 0 5px;
+  }
+  grid-column-gap: 5px;
+  padding: 0 20px;
+  padding-right: 0px;
+  border-radius: 5px;
+  background: $redColor;
+  color: white;
+  margin: 1px 0;
+  width: 88vw;
+  height: 30px;
+  font-family: Oxanium;
+
+  font-size: 1em;
+
+  @media screen and (min-width: 1000px){
+    width: 90%;
+  }
+
+  data, label{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+
+    align-items: center;
+  }
+
+  .skull{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  p {
+    justify-content: flex-start;
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  data{
+    justify-content: flex-end;
+  }
+
+  .countryDeaths{
+    justify-content: flex-start;
+    margin-left: 5px;
+  }
+
+
+
+
+
+
+
+  @media screen and(max-width: 600px) {
+    font-size: 0.7em;
+  }
+
+}
