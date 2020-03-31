@@ -483,10 +483,10 @@ $redColor: #c21807;
   align-items: center;
   grid-template-columns: 1fr 10fr 3fr 4fr 2fr 3fr;
   @media screen and (max-width: 600px) {
-  grid-template-columns: 0.5fr 5fr 2fr 2fr 1fr 2fr;
+  grid-template-columns: 0.5fr 5fr 2fr 2.5fr 1fr 2.5fr;
 }
   @media screen and (max-width: 370px) {
-    grid-template-columns: 1fr 3fr 3fr 3fr 0.5fr 3.5fr;
+    grid-template-columns: 1fr 3fr 3fr 3.5fr 0.5fr 3.5fr;
     grid-column-gap: 2px;
     padding: 0 5px;
   }
