@@ -362,6 +362,36 @@ class WebScraping extends React.Component {
                 </div>
 
 
+                    <div className={styles.countryBox}>
+
+                        <div className={styles.countryCasesBox}>
+                            <label>Przypadki na świecie:</label>
+                            <data>{this.numberParse(parseInt(this.state.totalCases))}</data>
+                        </div>
+
+
+                        <div className={styles.deathsAndRecoveredBox}>
+
+                            <div>
+                                <label>ZMARŁO:</label>
+                                <div className={styles.deathsPoland}>{this.numberParse(parseInt(this.state.totalDeaths))} † </div>
+                            </div>
+
+                            <div>
+                                <label>WYZDROWIAŁO:</label>
+                                <div className={styles.recoveredPoland}>{this.numberParse(parseInt(this.state.totalRecovered))}</div>
+                            </div>
+
+                        </div>
+
+                        <div className={styles.deathRateBox}>Na świecie co<span>{Math.ceil(this.state.totalCases / this.state.totalDeaths)}</span> zakażona osoba umiera † z powodu koronawirusa, co stanowi <span>{this.Round(this.state.totalDeaths/this.state.totalCases*100,2) + '%'}</span> wszystkich przypadków.</div>
+                        <div className={styles.deathRateBox}>Do tej pory wyzdrowiało <span>{this.Round(this.state.totalRecovered / this.state.totalCases, 2)}%</span> wszystkich chorych.</div>
+                        <div className={styles.deathRateBox}><span>{this.Round(this.state.totalCases / 7774800000, 4)}%</span> populacji Ziemii jest zarażona.</div>
+                        <div className={styles.deathRateBox}>Co oznacza, że co <span>{this.numberParse(Math.ceil(7774800000 / this.state.totalCases))}</span> mieszkaniec globu otrzymał pozytywny wynik testu na wirusa SARS-CoV-2.</div>
+                        <div className={styles.deathRateBox}>Do tej pory choroba w <span>{this.Round(this.state.totalDeaths/(this.state.totalDeaths+this.state.totalRecovered)*100, 2)}%</span> przypadków choroba kończy się śmiercią, a w <span>{this.Round(this.state.totalRecovered/(this.state.totalDeaths+this.state.totalRecovered)*100, 2)}%</span> ozdrowieniem chorego.</div>
+
+
+                    </div>
 
                 <div className={styles.dataTablesWrapper}>
 
@@ -402,6 +432,11 @@ class WebScraping extends React.Component {
 
                     <header>SARS-CoV-2 na świecie
                          (+procent wyzdrowiałych)</header>
+
+
+
+
+
 
                     {
 
