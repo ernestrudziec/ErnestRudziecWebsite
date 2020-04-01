@@ -4,7 +4,6 @@
     <list default="true" id="44992181-08df-480b-bdc4-840d951546a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
       <updated>1584872425481</updated>
       <workItem from="1584872428043" duration="23478000" />
       <workItem from="1584969258712" duration="60639000" />
-      <workItem from="1585561019067" duration="50382000" />
+      <workItem from="1585561019067" duration="51123000" />
     </task>
     <servers />
   </component>

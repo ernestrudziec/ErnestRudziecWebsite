@@ -353,8 +353,8 @@ class WebScraping extends React.Component {
                         </div>
 
                         <div className={styles.deathRate}>W Polsce co<span>{Math.ceil(this.state.confirmed / this.state.deaths)}</span> zakażona osoba umiera † z powodu koronawirusa.</div>
-                        <div className={styles.deathRate}>Do tej pory wyzdrowiało <span>{this.Round(this.state.recovered / this.state.confirmed, 4)}%</span> chorych.</div>
-                        <div className={styles.deathRate}><span>{this.Round(this.state.confirmed / 38383000, 6)}%</span> obywateli Polski jest zarażonych.</div>
+                        <div className={styles.deathRate}>Do tej pory wyzdrowiało <span>{this.Round(this.state.recovered / this.state.confirmed*100, 2)}%</span> chorych.</div>
+                        <div className={styles.deathRate}><span>{this.Round(this.state.confirmed / 38383000*100, 3)}%</span> obywateli Polski jest zarażonych.</div>
                         <div className={styles.deathRate}>Co oznacza, że co <span>{this.numberParse(Math.ceil(38383000 / this.state.confirmed))}</span> polak otrzymał pozytywny wynik testu na wirusa SARS-CoV-2.</div>
 
                         <caption>AKTUALIZACJA: {Date(this.state.lastUpdate)}</caption>
@@ -385,8 +385,8 @@ class WebScraping extends React.Component {
                         </div>
 
                         <div className={styles.deathRateBox}>Na świecie co<span>{Math.ceil(this.state.totalCases / this.state.totalDeaths)}</span> zakażona osoba umiera † z powodu koronawirusa, co stanowi <span>{this.Round(this.state.totalDeaths/this.state.totalCases*100,2) + '%'}</span> wszystkich przypadków.</div>
-                        <div className={styles.deathRateBox}>Do tej pory wyzdrowiało <span>{this.Round(this.state.totalRecovered / this.state.totalCases, 2)}%</span> wszystkich chorych.</div>
-                        <div className={styles.deathRateBox}><span>{this.Round(this.state.totalCases / 7774800000, 4)}%</span> populacji Ziemii jest zarażona.</div>
+                        <div className={styles.deathRateBox}>Do tej pory wyzdrowiało <span>{this.Round(this.state.totalRecovered / this.state.totalCases*100, 2)}%</span> wszystkich chorych.</div>
+                        <div className={styles.deathRateBox}><span>{this.Round(this.state.totalCases / 7774800000*100, 2)}%</span> populacji Ziemii jest zarażona.</div>
                         <div className={styles.deathRateBox}>Co oznacza, że co <span>{this.numberParse(Math.ceil(7774800000 / this.state.totalCases))}</span> mieszkaniec globu otrzymał pozytywny wynik testu na wirusa SARS-CoV-2.</div>
                         <div className={styles.deathRateBox}>Do tej pory choroba w <span>{this.Round(this.state.totalDeaths/(this.state.totalDeaths+this.state.totalRecovered)*100, 2)}%</span> przypadków choroba kończy się śmiercią, a w <span>{this.Round(this.state.totalRecovered/(this.state.totalDeaths+this.state.totalRecovered)*100, 2)}%</span> ozdrowieniem chorego.</div>
 
