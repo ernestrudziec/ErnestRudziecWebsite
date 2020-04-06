@@ -29,6 +29,7 @@ const AboutMeSection = () => {
 
                 <p>In my work I use the latest technologies 🚀 ensuring excellent performance. <strong>I care about the purity and transparency of the code, </strong>while maintaining appropriate semantics, standards and naming, e.g. (W3C, BEM, CamelCase).</p>
 
+
             </div>
             <div className={styles.pictureWrapper}>
             <img className={styles.picture} alt="img" src={picture}/>

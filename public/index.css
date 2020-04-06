@@ -14,12 +14,12 @@ html{
 }
 
 *,*::before,*::after {
-    box-sizing: inherit;
+   box-sizing: border-box;
 }
 
 body{
 
-    line-height: 1.5;
+    line-height: 1.2;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     height: auto;

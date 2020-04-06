@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="44992181-08df-480b-bdc4-840d951546a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WebScraping/WebScraping.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/HomePageView/HomePageView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/HomePageView/HomePageView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +100,9 @@
       <updated>1584872425481</updated>
       <workItem from="1584872428043" duration="23478000" />
       <workItem from="1584969258712" duration="60639000" />
-      <workItem from="1585561019067" duration="51123000" />
+      <workItem from="1585561019067" duration="52986000" />
+      <workItem from="1585929301320" duration="4000" />
+      <workItem from="1586183519823" duration="1529000" />
     </task>
     <servers />
   </component>
@@ -109,22 +118,22 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="150" y="272" key="EditFileWatcherDialog/0.23.1680.969@0.23.1680.969" timestamp="1585262623228" />
-    <state width="806" height="90" key="GridCell.Tab.0.bottom" timestamp="1585672651738">
+    <state width="608" height="90" key="GridCell.Tab.0.bottom" timestamp="1585918748883">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="806" height="90" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1585672651738" />
-    <state width="806" height="90" key="GridCell.Tab.0.center" timestamp="1585672651737">
+    <state width="608" height="90" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1585918748883" />
+    <state width="608" height="90" key="GridCell.Tab.0.center" timestamp="1585918748883">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="806" height="90" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1585672651737" />
-    <state width="806" height="90" key="GridCell.Tab.0.left" timestamp="1585672651737">
+    <state width="608" height="90" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1585918748883" />
+    <state width="608" height="90" key="GridCell.Tab.0.left" timestamp="1585918748882">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="806" height="90" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1585672651737" />
-    <state width="806" height="90" key="GridCell.Tab.0.right" timestamp="1585672651738">
+    <state width="608" height="90" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1585918748882" />
+    <state width="608" height="90" key="GridCell.Tab.0.right" timestamp="1585918748883">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="806" height="90" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1585672651738" />
+    <state width="608" height="90" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1585918748883" />
     <state x="0" y="156" key="SettingsEditor" timestamp="1585251555686">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
@@ -144,7 +153,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Components/WebScraping/WebScraping.js</url>
           <line>41</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

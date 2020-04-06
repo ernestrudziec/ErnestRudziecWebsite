@@ -139,8 +139,14 @@ h3{
   div{
 
    flex: auto;
-    font-size: 4em;
-    margin: 10px;
+    font-size: 3em;
+    margin: 10px 25px;
+
+    @media screen and (max-width: 900px) {
+
+      margin: 5px 15px ;
+
+    }
   }
 }
 
@@ -158,20 +164,29 @@ h3{
 
   div{
     flex: auto;
-    font-size: 4em;
-    margin: 10px;
+    font-size: 3em;
+    margin: 5px;
+
+    @media screen and (max-width: 900px){
+      margin: 5px 20px;
+    }
 
 
   }
 }
 
 .adobe{
-  display: flex;
+  display: inline;
+  width: 90%;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   font-size: 1em;
   margin-bottom: 0px;
+
+  b{
+    font-weight: 600;
+  }
 
   @media screen and (max-width: 900px){
     text-align: center;

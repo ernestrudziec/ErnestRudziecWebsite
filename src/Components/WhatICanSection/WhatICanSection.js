@@ -39,10 +39,10 @@ return(
                 <div className="devicon-photoshop-plain"></div>
                 <div className="devicon-illustrator-plain"></div>
 
-               <p className={styles.adobe}>   <div className="fab fa-adobe"></div>
+               <p className={styles.adobe}>
                    {/*Dzięki zajawce do fotografii i kręcenia wideo większość produktów z pakietu Adobe Creative nie stanowi dla mnie wyzwania.*/}
 
-                   Thanks to the love for photography and video shooting, most products from the Adobe Creative suite are not a challenge for me.
+                   Thanks to the love for photography and video shooting, most products from the <b>Adobe Creative Suite</b> are not a challenge for me.
                </p>
 
             </article>

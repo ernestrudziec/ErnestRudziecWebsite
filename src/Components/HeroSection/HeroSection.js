@@ -18,12 +18,12 @@ const HeroSection = () => {
         <div className={styles.socialMediaIcons}>
             <ScrollAnimation offset={0} animateOnce={true} animateIn="fadeInLeft" delay={2000}>
 
-            <i className="fab fa-linkedin-in"></i>
 
-                <a href="https://www.instagram.com/ernest_rudziec/"><i className="fab fa-instagram"></i></a>
-            <i className="fab fa-dribbble"></i>
 
-            <i className="fab fa-behance"></i>
+                <i className="fab fa-dribbble"></i>
+                <a href="/contact"><i className="fas fa-phone"></i></a>
+                <i className="fab fa-linkedin-in"></i>
+                <i className="fab fa-behance"></i>
             </ScrollAnimation>
         </div>
 
@@ -51,8 +51,11 @@ const HeroSection = () => {
 
             <a href="https://github.com/ernestrudziec"><i className="fab fa-github"></i></a>
             <a href="/cv"><i className="fas fa-address-card"></i></a>
+            <a href="https://www.instagram.com/ernest_rudziec/"><i className="fab fa-instagram"></i></a>
             <a href="/contact"><i className="fas fa-envelope"></i></a>
-            <a href="/contact"><i className="fas fa-phone"></i></a>
+
+
+
 
 
         </ScrollAnimation>
