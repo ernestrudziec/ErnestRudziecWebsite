@@ -27,7 +27,7 @@ const AboutMeSection = () => {
 
                 {/*<p> W swojej pracy wykorzystuję <strong>najnowsze technologie</strong> 🚀 zapewniające doskonałą wydajność. Dbam o <strong>czystość i przejrzystość kodu</strong>, utrzymując przy tym odpowiednią <strong>semantykę, standardy oraz nazewnictwo</strong> np. (W3C, BEM, CamelCase). </p>*/}
 
-                <p>In my work I use the latest technologies 🚀 ensuring excellent performance. <strong>I care about the purity and transparency of the code, </strong>while maintaining appropriate semantics, standards and naming, e.g. (W3C, BEM, CamelCase).</p>
+                <p>In my work I use the latest technologies 🚀 ensuring excellent performance. <strong>I care about the purity and transparency of the code, </strong>while maintaining appropriate semantics, standards and naming, e.g. (W3C, BEM, camelCase).</p>
 
 
             </div>

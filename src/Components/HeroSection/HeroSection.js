@@ -22,7 +22,7 @@ const HeroSection = () => {
 
                 <i className="fab fa-dribbble"></i>
                 <a href="/contact"><i className="fas fa-phone"></i></a>
-                <i className="fab fa-linkedin-in"></i>
+                <a href='https://www.linkedin.com/in/ernest-rudziec-4225231a7/'><i className="fab fa-linkedin-in"></i></a>
                 <i className="fab fa-behance"></i>
             </ScrollAnimation>
         </div>
