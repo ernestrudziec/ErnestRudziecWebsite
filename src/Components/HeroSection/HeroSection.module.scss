@@ -339,6 +339,10 @@ transition: 0.3s;
 
   }
 
+
+  @media screen and (max-height: 570px){
+    display: none;
+  }
 }
 @keyframes active-screen {
 
