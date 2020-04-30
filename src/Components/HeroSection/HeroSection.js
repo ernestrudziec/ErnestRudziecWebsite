@@ -41,9 +41,7 @@ const HeroSection = () => {
             <h1>Front-end developer ‍💻 and UI/UX Designer 🎨</h1>
 
             </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn" delay={1200} animateOnce={true}>
-            <button className={styles.resume}>My resume</button>
-            </ScrollAnimation>
+           
         </header>
         <div className={styles.contactInfos} >
         <ScrollAnimation animateOnce={true} offset={0} animateIn="fadeInRight" delay={1500}>
