@@ -2,8 +2,36 @@
 
 .wrapper{
 
+
+
+  :before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(17,17,38,1) 0%, rgba(17,17,38,0.1) 100%);
+
+  }
+
+  :after{
+    content: "";
+    background: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+
+  }
+
+  position: relative;
   min-height: 60vh;
-  background: $dark-blue;
+
   color: white;
   display: flex;
   justify-content: center;
@@ -11,13 +39,8 @@
   flex-direction: column;
   padding: 5vh 100px;
 
-  @media screen and (max-width: 1400px){
-    padding: 1vh 5vw;
-  }
 
-  @media screen and (max-width: 800px){
-    padding: 1vh 1vw;
-  }
+
 }
 
 h2 {
@@ -29,7 +52,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Oxanium;
   background: $mint;
   color: white;
   border-radius: 5px;
@@ -43,7 +65,8 @@ h2 {
 }
 
 h3{
-  font-family: Oxanium;
+
+  text-shadow: 0 0 30px $mint, 10px 10px 400px rgba(206,89,55,0.05);
   font-size: 1.2rem;
   color: $mint;
 }
@@ -51,9 +74,10 @@ h3{
 .wrapperInside{
   display: flex;
   justify-content: center;
-  background: $dark-blue;
+
   color: white;
  height: auto;
+
 
 
 
@@ -66,12 +90,18 @@ h3{
 }
 
 .designerWrapper{
+  *{
+    max-width: 400px;
+  }
 
   h2{
+    text-shadow: 0 0 30px $pink, 10px 10px 400px rgba(206,89,55,0.05);
     background: $pink;
   }
 
   h3{
+    text-shadow: 0 0 30px $pink, 10px 10px 400px rgba(206,89,55,0.05);
+
     color: $pink;
   }
 
@@ -80,23 +110,26 @@ h3{
 
 .developerWrapper{
 
+  *{
+    max-width: 400px;
+  }
 }
 
-.developerWrapper, .designerWrapper{
+.developerWrapper, .designerWrapper, .humanWrapper{
   text-align: center;
   @include lightShadow;
   position: relative;
   display: flex;
-  background: white;
-  color: $dark-blue;
+
+  color: white;
   height: auto;
-  width: 650px;
+  width: 33%;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  border-radius: 5px;
-  margin: 30px;
-  padding: 50px 30px;
+  border-radius: 20px;
+  margin: 2em 1em;
+  padding: 5em 1em;
 
 
   @media screen and (max-width: 1300px){
@@ -106,51 +139,37 @@ h3{
 
   border-bottom: $mint solid 15px;
 
-  div{
-    font-size: 4em;
-    margin: 0px 0px 30px 0px;
-    color: $dark-blue;
-  }
+
 
 
 }
 
-.picture{
-  margin: 0 -50px;
-  position: relative;
-  z-index: 50;
 
-  @media screen and (max-width: 1300px){
-    display: none;
-  }
-}
 
 .whatIUse{
-  width:  80%;
+  width:  100%;
   height: 300px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
 
+  ul{
+    list-style: none;
+    padding: 0;
+    font-weight: 700;
+  }
+
   @media screen and (max-width: 900px){
     height:auto;
   }
-  div{
 
-   flex: auto;
-    font-size: 3em;
-    margin: 10px 25px;
 
-    @media screen and (max-width: 900px) {
-
-      margin: 5px 15px ;
-
-    }
-  }
 }
 
 .whatIUseDesign{
+
+
   width: 80%;
   height: 300px;
   display: flex;
@@ -158,21 +177,17 @@ h3{
   align-items: center;
   flex-wrap: wrap;
 
+  ul{
+    list-style: none;
+    padding: 0;
+    font-weight: 600;
+  }
+
 @media screen and (max-width: 900px){
   height:auto;
 }
 
-  div{
-    flex: auto;
-    font-size: 3em;
-    margin: 5px;
 
-    @media screen and (max-width: 900px){
-      margin: 5px 20px;
-    }
-
-
-  }
 }
 
 .adobe{
@@ -194,14 +209,28 @@ h3{
   }
 
 
-  div{
 
-    font-size: 8em;
-    padding-right: 30px;
+}
 
+.humanWrapper{
 
-    @media screen and (max-width: 900px){
-      padding: 0;
-    }
+  *{
+    max-width: 400px;
   }
+
+  h2{
+    text-shadow: 0 0 30px $dark-blue, 10px 10px 400px rgba(206,89,55,0.05);
+    background: white;
+    color: $dark-blue;
+    border-top: solid 3px $mint;
+  }
+
+  h3{
+    text-shadow: 0 0 30px white, 10px 10px 400px rgba(206,89,55,0.05);
+
+    color: white;
+  }
+
+  border-bottom: white solid 15px !important;
+
 }

@@ -20,50 +20,42 @@
 .wrapper{
 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: $dark-blue;
-  color: white;
-  padding: 10vh $padding;
-
-  @media screen and (max-width: 1400px){
-    padding: 1vh 5vw;
-    flex-direction: column;
-  }
-
-
-}
-
-.pictureWrapper {
-
-
-  width:500px;
-  margin-left: 50px;
-  position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  border-radius: px;
+  color: white;
+  padding: 5em 1em;
+  position: relative;
 
-
-
-  @media screen and(max-width: 1400px) {
-    margin-bottom: 100px;
-    margin-left: 0;
-    width: auto;
+  *{
+    max-width: 900px;
   }
 
-  @media screen and (max-width: 900px) {
-
-    margin-top: 10px;
-
-    .blob {
-      width: 100vw;
-
-    }
-
+  :after{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    background: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
   }
+
+  :before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(0deg, rgba(17,17,38,1) 0%, rgba(17,17,38,0.1) 100%);
+
+  }
+
 }
 
 .paragraphWrapper{
@@ -78,160 +70,66 @@
       color: white;
       background: $pink;
       padding: 20px;
-      border-radius: 10px;
+
     }
 
   }
 }
 
-.blob{
-  transition: 2s;
-  @media screen and (max-width: 1200px){
-    transform: rotate(225deg) scale(0.7);
-  }
-  transform: rotate(-60deg) scale(0.7);
-  z-index: 0;
-  animation: rotateBlob 10s infinite;
 
 
-}
-
-.picture{
-  transition: 0.3s;
-  position: absolute;
-  z-index: 1;
-  width: 300px;
-}
-
-
-
-
-
-.aboutResponsiveWrapper{
-
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  color: $dark-blue;
-  padding: 35vh $padding;
-
-
-
-  @media screen and (max-width: 1400px){
-    padding: 30vh 5vw;
-    flex-direction: column;
-
-  }
-
-  @media screen and (max-width: 550px){
-    padding: 10vh 5vw;
-
-  }
-
-
-&:before{
-  position: absolute;
-  content: "";
-  top: -5px;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  background: url("../../../src/assets/svg/wave1.svg") top no-repeat;
-  background-size: 110vw;
-  z-index: 0;
-}
-
-  &:after{
-
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: -100px;
-    z-index: -1;
-    @media screen and (max-width: 800px){
-      bottom: -5px;
-    }
-    left: 0;
-    right: 0;
-    background: url("../../../src/assets/svg/wave2.svg") bottom no-repeat;
-    background-size: 110vw;
-    ;
-
-  }
-}
-
-.contentWrapper2{
-  width: 100%;
+.content{
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: right;
+  padding: 1em;
 
-  @media screen and (max-width: 1400px){
+  @media screen and (max-width: 800px){
     flex-direction: column;
-
   }
 
 
 
-  .responsiveDescriptionRight{
-    padding-left: 100px;
-    transition: 0.3s;
 
 
-    @media screen and (max-width:1400px){
-      text-align: center;
-      padding: 0;
+}
 
-    }
+.content2{
+  padding: 1em;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  @media screen and (max-width: 800px){
+    flex-direction: column-reverse;
   }
+
+
+
+}
+
+
+
+.description{
+max-width: 500px;
+}
+
+.aboutResponsiveWrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3em 1em;
+  flex-direction: column;
 }
 
 .responsivePicture{
-
-  width: 500px;
-
-  @media screen and (max-width:700px) {
-
-    width: 50vw;
-
-  }
-
-
+  width: 300px;
+  margin: 0 2em;
 }
 
-.contentWrapper3{
-  width: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-
-  @media screen and (max-width: 1400px) {
-  flex-direction: column-reverse;
-    text-align: center;
-
-
-  }
-
-
-
-  .responsiveDescriptionLeft{
-    padding-right: 100px;
-
-    @media screen and (max-width: 1400px){
-      padding: 0;
-
-    }
-    transition: 0.3s;
-
-    }
-  }
 
 
 

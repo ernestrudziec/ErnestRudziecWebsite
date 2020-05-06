@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44992181-08df-480b-bdc4-840d951546a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection/AboutMeSection.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HeroSection/HeroSection.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MyWorksSection/MyWorksSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MyWorksSection/MyWorksSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MyWorksSection/MyWorksSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MyWorksSection/MyWorksSection.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/WhatICanSection/WhatICanSection.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/HomePageView/HomePageView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/HomePageView/HomePageView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/RootView/RootView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/RootView/RootView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +51,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -49,8 +66,9 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -102,7 +120,8 @@
       <workItem from="1586183519823" duration="2509000" />
       <workItem from="1586606744011" duration="282000" />
       <workItem from="1587291474200" duration="2036000" />
-      <workItem from="1588241822940" duration="11000" />
+      <workItem from="1588241822940" duration="349000" />
+      <workItem from="1588747385236" duration="17170000" />
     </task>
     <servers />
   </component>
@@ -114,42 +133,45 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="225" y="227" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1584873292244" />
-    <state x="150" y="272" key="EditFileWatcherDialog" timestamp="1585262623228">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state x="150" y="270" width="667" height="653" key="EditFileWatcherDialog" timestamp="1588750022368">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
+    <state x="150" y="270" width="667" height="653" key="EditFileWatcherDialog/0.23.1680.963@0.23.1680.963" timestamp="1588750022368" />
     <state x="150" y="272" key="EditFileWatcherDialog/0.23.1680.969@0.23.1680.969" timestamp="1585262623228" />
-    <state width="818" height="89" key="GridCell.Tab.0.bottom" timestamp="1587406107228">
+    <state width="940" height="89" key="GridCell.Tab.0.bottom" timestamp="1588780673534">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="818" height="89" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1587406107228" />
+    <state width="940" height="89" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1588780673534" />
     <state width="943" height="90" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586206451299" />
-    <state width="818" height="89" key="GridCell.Tab.0.center" timestamp="1587406107227">
+    <state width="940" height="89" key="GridCell.Tab.0.center" timestamp="1588780673533">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="818" height="89" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1587406107227" />
+    <state width="940" height="89" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1588780673533" />
     <state width="943" height="90" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586206451299" />
-    <state width="818" height="89" key="GridCell.Tab.0.left" timestamp="1587406107227">
+    <state width="940" height="89" key="GridCell.Tab.0.left" timestamp="1588780673532">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="818" height="89" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1587406107227" />
+    <state width="940" height="89" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1588780673532" />
     <state width="943" height="90" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586206451298" />
-    <state width="818" height="89" key="GridCell.Tab.0.right" timestamp="1587406107228">
+    <state width="940" height="89" key="GridCell.Tab.0.right" timestamp="1588780673534">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="818" height="89" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1587406107228" />
+    <state width="940" height="89" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1588780673534" />
     <state width="943" height="90" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586206451299" />
-    <state x="3" y="128" key="SettingsEditor" timestamp="1586606848237">
+    <state x="3" y="128" key="SettingsEditor" timestamp="1588750033773">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state x="3" y="128" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1586606848237" />
+    <state x="3" y="128" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1588750033773" />
     <state x="0" y="156" key="SettingsEditor/0.23.1680.969@0.23.1680.969" timestamp="1585251555686" />
-    <state x="293" y="424" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585692969787">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state x="293" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588776549320">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
+    <state x="293" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.963@0.23.1680.963" timestamp="1588776549320" />
     <state x="293" y="424" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.966@0.23.1680.966" timestamp="1585692969787" />
-    <state x="125" y="219" width="670" height="676" key="search.everywhere.popup" timestamp="1585519147231">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state x="125" y="218" width="670" height="672" key="search.everywhere.popup" timestamp="1588750315490">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
+    <state x="125" y="218" width="670" height="672" key="search.everywhere.popup/0.23.1680.963@0.23.1680.963" timestamp="1588750315490" />
     <state x="125" y="219" width="670" height="676" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1585519147231" />
   </component>
   <component name="XDebuggerManager">
