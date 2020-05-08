@@ -1,68 +1,85 @@
 @import '../../styles/globalColors';
 
 .wrapper {
-  min-height: 40vh;
-  margin-top: -2px;
-  font-size: 0.6em;
-  padding: 10vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: $dark-blue;
   color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: Oxanium;
-  font-weight: 600;
 
-  @media screen and (max-width: 1200px){
-    flex-direction: column-reverse;
-
-  }
-
-  aside{
-    margin: 30px 0;
-    font-size: 1.5em;
-i{
-  margin: 0 10px;
-}
-  }
-
-
-  div {
+  div{
     display: flex;
-    justify-content: center;
-    letter-spacing: 2px;
-    border-left: solid 1px white;
-    padding-left: 50px;
-    border-right: solid 1px white;
-    padding-right: 50px;
-
-
-    align-items: center;
-    font-size: 1em;
-    text-transform: uppercase;
-
-    @media screen and (max-width: 600px){
-      padding: 0 20px;
-    }
-
-    span {
-      margin: 0 10px;
-      @media screen and (max-width: 600px){
-       margin: 0 5px;
-      }
-    }
 
   }
 
-  img {
-    margin-left: 30px;
-    width: 150px;
-
-    @media screen and (max-width: 600px){
-      width: 100px;
-      margin-left: 10px;
-    }
+  img{
+    height: 100px;
+    margin: 3em 3em;
   }
+
+}
+
+.madeBy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  font-family: Oxanium, sans-serif;
+  text-transform: uppercase;
+  margin-top: 3em;
+  font-size: 0.8em;
+
+  padding: 3em 0;
+
+
+  @media screen and (max-width: 800px){
+    flex-direction: column;
+  }
+
+  opacity: 0.5;
+  span{
+    margin: 0 1em;
+    font-size: 1rem;
+
+  }
+
+  img{
+
+    width: 120px;
+    margin: 0 2em;
+  }
+}
+
+.contact{
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 800;
+
+  *{
+    cursor: pointer;
+  }
+
+  :hover{
+    text-decoration: underline;
+  }
+
+  i{
+    font-size: 2em;
+    margin: 0.5em;
+  }
+
+
+
+}
+
+.contactWrapper{
+display: flex;
+  justify-content: center;
+  align-items: center;
 
 
 }

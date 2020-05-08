@@ -8,10 +8,13 @@
   align-items: center;
   flex-direction: column;
 
-position: relative;
-color: white;
+  position: relative;
+  color: white;
 
-  :after{
+
+
+
+  &:after{
     content: "";
     background: url("https://images.pexels.com/photos/1936299/pexels-photo-1936299.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center;
     background-size: cover;
@@ -20,22 +23,25 @@ color: white;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -3;
+    z-index: -4;
+
 
   }
 
-
-  :before{
+  &:before{
     position: absolute;
     content: "";
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
-    background: linear-gradient(180deg, rgba(17,17,38,1) 0%, rgba(17,17,38,0.5) 50%, rgba(17,17,38,1) 100%);
+    z-index: -3;
+    background: linear-gradient(180deg, rgba(17,17,38,1) 0%, rgba(17,17,38,0.8) 50%, rgba(17,17,38,1) 100%);
 
   }
+
+
+
 
 
 }

@@ -36,36 +36,36 @@ const StyledProject = styled.div`
     max-width: 600px;
   }
 
-  :before {
-    z-index: -2;
+  &:before {
     position: absolute;
+    z-index: -2;
     content: "";
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background: ${({ url }) => (url ? `url(${url})` : "transparent")} center
-      no-repeat;
+    background: ${({ url }) => (url ? `url(${url})` : "black")} center no-repeat;
     background-size: cover;
     border-radius: 10px;
-    opacity: 1;
+
     @media screen and (max-width: 726px) {
       border-radius: 0;
     }
   }
 
-  :after {
+  &:after {
     z-index: -1;
     position: absolute;
-
+    opacity: 0.8;
     content: "";
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background: ${({ bgcolor }) => (bgcolor ? bgcolor : "transparent")};
-    opacity: 0.9;
+    background: ${({ bgcolor }) => (bgcolor ? bgcolor : "black")};
+
     border-radius: 10px;
+
     @media screen and (max-width: 726px) {
       border-radius: 0;
     }
@@ -84,7 +84,6 @@ const StyledButton = styled.button`
   border: solid 2px white;
   font-size: 1rem;
   background: transparent;
-  color: white;
   padding: 10px 5px;
   border-radius: 5px;
   outline: none;
@@ -100,7 +99,8 @@ const StyledButton = styled.button`
     color: ${({ bgcolor }) => (bgcolor ? bgcolor : "transparent")};
   }
   pointer-events: ${({ active }) => (active ? "initial" : "none")};
-  color: ${({ active }) => (active ? "white" : "rgba(255,255,255,0.3)")};
+  color: ${({ active }) =>
+    active ? "rgba(255,255,255,1)" : "rgba(255,255,255,0.3)"};
 
   border: ${({ active }) =>
     active ? "solid 2px white" : "solid 2px rgba(255,255,255,0.3)"};

@@ -17,6 +17,7 @@ const WhatICanSection = () => {
           {/*<article>Stawiam na prostotę. <strong>Lubię elegancki i na maksa*/}
           {/*    czytelny design.</strong> Kiedy trzeba potrafię też użyć różnych kolorów i kształtów.*/}
           {/*</article>*/}
+          <i className="fas fa-pencil-ruler"></i>
           <article>
             I focus on simplicity.{" "}
             <strong> I like elegant and easy to read design. </strong> When I
@@ -60,7 +61,7 @@ const WhatICanSection = () => {
 
         <div className={styles.developerWrapper}>
           <h2>as front-end developer</h2>
-
+          <i className="fas fa-code" />
           <article>
             {/*Porządek w kodzie i plikach to podstawa. Staram się zawsze wybierać <strong>najlepsze rozwiązanie do danej realizacji</strong>, które zapewni najlepszą efektywność.*/}
             Order in code and files is the basis. I always try to choose the
@@ -94,8 +95,8 @@ const WhatICanSection = () => {
 
         <div className={styles.humanWrapper}>
           <h2>as person</h2>
-          <i className="fas fa-code" />
 
+          <i className="fas fa-user-tie"></i>
           <article>
             {/*Porządek w kodzie i plikach to podstawa. Staram się zawsze wybierać <strong>najlepsze rozwiązanie do danej realizacji</strong>, które zapewni najlepszą efektywność.*/}
             I am a communicative, helpful and creative person. I am still
