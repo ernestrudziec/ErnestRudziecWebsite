@@ -11,11 +11,19 @@ const StyledProject = styled.div`
   padding: 0.3em;
   font-size: 3em;
   color: white;
-  width: 320px;
+  width: 500px;
   height: 320px;
   position: relative;
-  margin: 0.3rem;
+
   border-radius: 10px;
+
+  margin: 0.1em;
+
+  @media screen and (max-width: 726px) {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+  }
 
   h1 {
     margin: 0;
@@ -40,6 +48,9 @@ const StyledProject = styled.div`
     background: ${({ url }) => (url ? `url(${url})` : "black")};
     background-size: cover;
     border-radius: 10px;
+    @media screen and (max-width: 726px) {
+      border-radius: 0;
+    }
   }
 
   :after {
@@ -55,6 +66,9 @@ const StyledProject = styled.div`
     opacity: 0.9;
 
     border-radius: 10px;
+    @media screen and (max-width: 726px) {
+      border-radius: 0;
+    }
   }
 `;
 

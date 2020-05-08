@@ -19,7 +19,7 @@ const MyWorksSection = () => {
           name="HELLaw - lawyers hub"
           bgcolor={dark_blue}
           description="My biggest application ever made in real team. Cannot tell any special infos because It's not published yet. I can show code and demo only for verified recruiters after e-mail or call."
-          url={url1}
+          url="https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
         />
 
         <Project
@@ -41,12 +41,21 @@ const MyWorksSection = () => {
         />
 
         <Project
+          name="ernestrudziec.com"
+          link="https://www.ernestrudziec.com"
+          github="https://github.com/ernestrudziec/ErnestRudziecWebsite"
+          bgcolor={dark_blue}
+          description="Just this website! ;)  Made with React css-modules and styled-components. Deployed on netlify."
+          url="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        />
+
+        <Project
           name="Sleep-Manager"
           bgcolor={mint}
           link="https://sleep-manager.netlify.app"
           github="https://github.com/ernestrudziec/sleep-manager"
           description="Website made in React for my friend as a presentation of her invention."
-          url={url1}
+          url="https://images.pexels.com/photos/914910/pexels-photo-914910.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
         />
 
         <Project
@@ -55,7 +64,15 @@ const MyWorksSection = () => {
           bgcolor={dark_blue}
           link="https://adrian-myjak-welding.netlify.app"
           description="Website made for my friend as his welding company promotion."
-          url={url1}
+          url="https://images.pexels.com/photos/2381463/pexels-photo-2381463.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        />
+
+        <Project
+          name="Windaww"
+          bgcolor={dark_blue2}
+          link="https://windaww.netlify.app"
+          description="Website made for polish company manufacturing windows. Only front-end side ended so it only looks for now. Just any given back-end yet."
+          url="https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
         />
 
         <Project
@@ -63,15 +80,7 @@ const MyWorksSection = () => {
           bgcolor={pink}
           github="https://github.com/ernestrudziec/familiada-react"
           description="Website allowing people to play polish popular game by opening website on 2 independent devices and connecting to online rooms. Used node.js in this project. Unfortunately there is only code, website is not hosted and fully ended yet."
-          url={url1}
-        />
-
-        <Project
-          name="Windaww"
-          bgcolor={pink}
-          link="https://windaww.netlify.app"
-          description="Website made for polish company manufacturing windows. Only front-end side ended so it only looks for now. Just any given back-end yet."
-          url={url1}
+          url="https://images.pexels.com/photos/3811867/pexels-photo-3811867.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
         />
 
         <Project
@@ -80,16 +89,7 @@ const MyWorksSection = () => {
           github="https://github.com/ernestrudziec/GrafikowanieStaticWebsite"
           bgcolor={mint}
           description="That's one of my first websites made simply in HTML/CSS for my personal purposes when I was only freelance Graphic Designer"
-          url={url1}
-        />
-
-        <Project
-          name="ernestrudziec.com"
-          link="https://www.ernestrudziec.com"
-          github="https://github.com/ernestrudziec/ErnestRudziecWebsite"
-          bgcolor={dark_blue}
-          description="Just this website! ;) I add it there because now there are 9 projects and It looks perfectly. Made with React and styled-components. Deployed on netlify."
-          url={url1}
+          url="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
         />
       </div>
     </div>
