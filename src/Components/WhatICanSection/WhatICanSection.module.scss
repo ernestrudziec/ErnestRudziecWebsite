@@ -1,8 +1,22 @@
 @import "../../../src/styles/globalColors";
 
+.mySkills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  
+  img{
+    width: 100px;
+    margin-right: 2em;
+
+  }
+}
 .wrapper{
 
 
+
+  padding: 5em 0;
 
   :before{
     position: absolute;
@@ -37,7 +51,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 5vh 100px;
+
 
 
 
@@ -72,18 +86,14 @@ h3{
 }
 
 .wrapperInside{
+  margin: 1em 0;
   display: flex;
   justify-content: center;
-
+align-items: center;
   color: white;
  height: auto;
 
-
-
-
-
-
-  @media screen and (max-width: 1300px){
+  @media screen and (max-width: 1200px){
     flex-direction: column;
     width: 90vw;
   }
@@ -133,8 +143,10 @@ h3{
 
 
   @media screen and (max-width: 1300px){
-    width: 90vw;
-    margin: 3vh 0;
+    width: 95%;
+    margin: 3em 0;
+
+
   }
 
   border-bottom: $mint solid 15px;

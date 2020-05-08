@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "./WhatICanSection.module.scss";
+import smallLogo from "../../assets/svg/miniicon.svg";
 
 const WhatICanSection = () => {
   return (
     <section className={styles.wrapper}>
       {/*<h1>Co potrafię? 🖖🏻</h1>*/}
-      <h1>My skills 🖖🏻</h1>
+      <div className={styles.mySkills}>
+        <img src={smallLogo} />
+        <h1>My skills 🖖🏻</h1>
+      </div>
 
       <div className={styles.wrapperInside}>
         <div className={styles.designerWrapper}>
@@ -65,7 +69,7 @@ const WhatICanSection = () => {
           </article>
           <h3>
             {/*Z czego dobrze korzystam?*/}
-            What am I familiar with ?
+            What am I familiar with?
           </h3>
           <article className={styles.whatIUse}>
             <ul>
@@ -105,7 +109,7 @@ const WhatICanSection = () => {
           </h3>
           <article className={styles.whatIUse}>
             <ul>
-              <li>Photography</li>
+              <li>Photographing</li>
               <li>Drone shooting</li>
               <li>Video editing</li>
               <li>Helping other people</li>

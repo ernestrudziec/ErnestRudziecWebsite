@@ -18,7 +18,8 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
