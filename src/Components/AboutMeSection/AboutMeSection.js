@@ -8,6 +8,7 @@ import picture3 from "../../assets/svg/picture4.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import wave2 from "../../assets/svg/wave2.svg";
 import smallLogo from "../../assets/svg/miniicon.svg";
+import MyWorksSection from "../MyWorksSection/MyWorksSection";
 
 const AboutMeSection = () => {
   return (

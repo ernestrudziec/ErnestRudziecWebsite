@@ -8,13 +8,12 @@ const StyledProject = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0.3em;
+  padding: 1em 0.3em;
   font-size: 3em;
   color: white;
   width: 500px;
   height: 320px;
   position: relative;
-
   border-radius: 10px;
 
   margin: 0.1em;
@@ -45,9 +44,11 @@ const StyledProject = styled.div`
     right: 0;
     top: 0;
     bottom: 0;
-    background: ${({ url }) => (url ? `url(${url})` : "black")};
+    background: ${({ url }) => (url ? `url(${url})` : "transparent")} center
+      no-repeat;
     background-size: cover;
     border-radius: 10px;
+    opacity: 1;
     @media screen and (max-width: 726px) {
       border-radius: 0;
     }
@@ -62,9 +63,8 @@ const StyledProject = styled.div`
     right: 0;
     top: 0;
     bottom: 0;
-    background: ${({ bgcolor }) => (bgcolor ? bgcolor : "black")};
+    background: ${({ bgcolor }) => (bgcolor ? bgcolor : "transparent")};
     opacity: 0.9;
-
     border-radius: 10px;
     @media screen and (max-width: 726px) {
       border-radius: 0;
@@ -74,7 +74,6 @@ const StyledProject = styled.div`
 
 const StyledBottom = styled.div`
   width: 90%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +81,6 @@ const StyledBottom = styled.div`
 
 const StyledButton = styled.button`
   cursor: pointer;
-  width: 100%;
   border: solid 2px white;
   font-size: 1rem;
   background: transparent;
@@ -91,14 +89,21 @@ const StyledButton = styled.button`
   border-radius: 5px;
   outline: none;
 
+  width: 100%;
+
   i {
     margin-left: 6px;
   }
 
   :hover {
     background: white;
-    color: ${({ bgcolor }) => (bgcolor ? bgcolor : "black")};
+    color: ${({ bgcolor }) => (bgcolor ? bgcolor : "transparent")};
   }
+  pointer-events: ${({ active }) => (active ? "initial" : "none")};
+  color: ${({ active }) => (active ? "white" : "rgba(255,255,255,0.3)")};
+
+  border: ${({ active }) =>
+    active ? "solid 2px white" : "solid 2px rgba(255,255,255,0.3)"};
 `;
 
 const StyledTop = styled.div`
@@ -110,11 +115,10 @@ const StyledTop = styled.div`
 `;
 
 const StyledA = styled.a`
-  width: 50%;
-  margin: 0 0.1em;
-
-  opacity: ${({ active }) => (active ? "1" : "0.5")};
-  pointer-events: ${({ active }) => (active ? "inital" : "none")};
+  display: flex;
+  margin: 0.1em 0.1em;
+  background: transparent;
+  width: 100%;
 `;
 
 const Project = ({ bgcolor, url, name, link, description, github }) => {
@@ -128,14 +132,14 @@ const Project = ({ bgcolor, url, name, link, description, github }) => {
 
         <StyledBottom>
           <StyledA target="_blank" active={github} href={github}>
-            <StyledButton bgcolor={bgcolor}>
+            <StyledButton active={github} bgcolor={bgcolor}>
               Github
               <i className="fab fa-github"></i>
             </StyledButton>
           </StyledA>
 
           <StyledA target="_blank" active={link} href={link}>
-            <StyledButton bgcolor={bgcolor}>
+            <StyledButton active={link} bgcolor={bgcolor}>
               Demo
               <i className="fas fa-play"></i>
             </StyledButton>

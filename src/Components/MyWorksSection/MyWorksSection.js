@@ -17,9 +17,9 @@ const MyWorksSection = () => {
       <div className={styles.gallery}>
         <Project
           name="HELLaw - lawyers hub"
-          bgcolor={dark_blue}
           description="My biggest application ever made in real team. Cannot tell any special infos because It's not published yet. I can show code and demo only for verified recruiters after e-mail or call."
           url="https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+          bgcolor={dark_blue}
         />
 
         <Project
