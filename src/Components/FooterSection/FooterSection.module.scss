@@ -59,6 +59,10 @@
   flex-direction: row;
   font-weight: 800;
 
+  @media screen and (max-width: 800px){
+    flex-direction: column;
+  }
+
   *{
     cursor: pointer;
   }
