@@ -68,7 +68,7 @@ const StyledButton = styled.button`
   outline: none;
   cursor: pointer;
   position: absolute;
-  right: 0.5em;
+
   top: 0.5em;
 
   font-size: 2em;
