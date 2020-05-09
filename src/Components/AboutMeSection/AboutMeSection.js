@@ -69,7 +69,9 @@ const AboutMeSection = () => {
         <div className={styles.content2}>
           <div className={styles.description}>
             {/*<h1>Ale dlaczego i po co? ✅ </h1>*/}
-            <h1>✅But why? </h1>
+            <h1>
+              <span>✅</span>But why?{" "}
+            </h1>
 
             {/*<p>Jest to istotne, ponieważ dziś prawdziwą siłę internetu stanowią użytkownicy mobilni 📱 korzystający z małych ekranów telefonów czy tabletów.</p>*/}
 
