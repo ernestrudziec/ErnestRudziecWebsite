@@ -69,36 +69,34 @@ const StyledButton = styled.button`
   cursor: pointer;
   position: absolute;
 
-  top: 0.5em;
-
   font-size: 2em;
-  width: 40px;
-  height: 40px;
-  background: transparent;
+  width: 72px;
+  height: 72px;
 
-  @media screen and (max-width: 400px) {
-    right: 0.5em;
-    top: 0.5em;
-  }
+  right: 0px;
+  top: 0px;
 
-  div {
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-  }
+  border-radius: 50%;
 `;
 
 const StyledX = styled.div`
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
   transform-origin: center;
   transition: 0.3s ease-in-out;
-  transform: translate(-50%, 50%)
+  transform: translate(-50%, -50%)
     ${({ active }) => (active ? "scale(1)" : "scale(0)")} !important;
 `;
 
 const StyledHam = styled.div`
+  position: absolute;
+  left: 50%;
+  top: 50%;
   transform-origin: center;
   transition: 0.3s ease-in-out;
-  transform: translate(-50%, 50%)
+  transform: translate(-50%, -50%)
     ${({ active }) => (active ? "scale(1)" : "scale(0)")} !important;
 `;
 

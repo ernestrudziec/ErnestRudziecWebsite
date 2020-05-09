@@ -40,7 +40,8 @@
 
   :after{
     content: "";
-    position: fixed;
+    position: absolute;
+
     z-index: -4;
     background: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center;
     background-size: cover;
@@ -48,6 +49,8 @@
     bottom: 0;
     left: 0;
     right: 0;
+
+
 
   }
 
