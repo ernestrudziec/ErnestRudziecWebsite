@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./components/Project/Project";
 import styles from "./MyWorksSection.module.scss";
+import iconify from "../../assets/svg/miniicon.svg";
 
 const mint = "#52C0D6";
 const dark_blue = "#111126";
@@ -13,7 +14,10 @@ const url1 =
 const MyWorksSection = () => {
   return (
     <div className={styles.wrapper}>
-      <h1>My works 🙋‍♂️</h1>
+      <div className={styles.topHeaderWrapper}>
+        <img src={iconify} />
+        <h1>My works 🙋‍♂️</h1>
+      </div>
       <div className={styles.gallery}>
         <Project
           name="HELLaw - lawyers hub"

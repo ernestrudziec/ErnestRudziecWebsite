@@ -48,17 +48,19 @@ const AboutMeSection = () => {
           <img src={picture2} className={styles.responsivePicture} />
 
           <div className={styles.description}>
-            <h1>Responsive Web Design 👨🏻‍💻</h1>
+            <h1>
+              <span>👨🏻‍💻</span>Responsive Web Design{" "}
+            </h1>
 
             {/*<p>Strony projektuję z myślą o <strong>poprawnym ich wyświetlaniu</strong> na każdym ekranie  💻*/}
             {/*    <p>*/}
 
             <p>
-              {" "}
-              I design websites with a view to{" "}
+              I design websites with a view to
               <strong>
+                {" "}
                 displaying them correctly on every screen, even mobile phones
-                and tablets 💻
+                and 💻 tablets
               </strong>
             </p>
           </div>
@@ -67,7 +69,7 @@ const AboutMeSection = () => {
         <div className={styles.content2}>
           <div className={styles.description}>
             {/*<h1>Ale dlaczego i po co? ✅ </h1>*/}
-            <h1>But why? ✅ </h1>
+            <h1>✅But why? </h1>
 
             {/*<p>Jest to istotne, ponieważ dziś prawdziwą siłę internetu stanowią użytkownicy mobilni 📱 korzystający z małych ekranów telefonów czy tabletów.</p>*/}
 

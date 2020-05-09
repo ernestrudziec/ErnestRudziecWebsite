@@ -16,7 +16,8 @@ const StyledProject = styled.div`
   position: relative;
   border-radius: 10px;
 
-  margin: 0.1em;
+  margin: 0.3em;
+  box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.5);
 
   @media screen and (max-width: 726px) {
     margin: 0;

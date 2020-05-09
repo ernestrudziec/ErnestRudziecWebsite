@@ -44,6 +44,7 @@
 
 
 
+
 }
 
 .gallery{
@@ -58,3 +59,16 @@
 
 }
 
+.topHeaderWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+
+  img{
+    width: 100px;
+    margin-right: 2em;
+
+  }
+
+}
