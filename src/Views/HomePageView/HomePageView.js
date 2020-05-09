@@ -70,6 +70,7 @@ const StyledButton = styled.button`
   position: absolute;
   right: 0.5em;
   top: 0.5em;
+
   font-size: 2em;
   width: 40px;
   height: 40px;
