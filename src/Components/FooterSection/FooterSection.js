@@ -5,7 +5,7 @@ import smallLogo from "../../assets/svg/miniicon.svg";
 
 const FooterSection = () => {
   return (
-    <footer className={styles.wrapper}>
+    <footer id="contact" className={styles.wrapper}>
       <div className={styles.contactWrapper}>
         <div className={styles.contact}>
           <div>ernest.rudziec@gmail.com</div>

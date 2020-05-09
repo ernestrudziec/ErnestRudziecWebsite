@@ -9,7 +9,7 @@ import logoPicture2 from "../../assets/svg/logotyp2.svg";
 
 const HeroSection = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="home" className={styles.wrapper}>
       <header className={styles.headerWrapper}>
         <div className={styles.logoPictureWrapper}>
           <img className={styles.logoPicture2} src={logoPicture2} />

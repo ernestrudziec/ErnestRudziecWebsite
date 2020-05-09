@@ -13,7 +13,7 @@ const url1 =
   "https://images.pexels.com/photos/40820/military-men-departing-service-uniform-40820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
 const MyWorksSection = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="my-works" className={styles.wrapper}>
       <div className={styles.topHeaderWrapper}>
         <img src={iconify} />
         <h1>My works 🙋‍♂️</h1>
@@ -83,7 +83,7 @@ const MyWorksSection = () => {
           name="Familiada"
           bgcolor={pink}
           github="https://github.com/ernestrudziec/familiada-react"
-          description="Website allowing people to play polish popular game by opening website on 2 independent devices and connecting to online rooms. Used node.js in this project. Unfortunately there is only code, website is not hosted and fully ended yet."
+          description="Website allowing people to play polish popular game by opening website on 2 independent devices and connecting to online rooms. Used node.js."
           url="https://images.pexels.com/photos/3811867/pexels-photo-3811867.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
         />
 

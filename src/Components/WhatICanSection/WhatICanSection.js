@@ -4,7 +4,7 @@ import smallLogo from "../../assets/svg/miniicon.svg";
 
 const WhatICanSection = () => {
   return (
-    <section className={styles.wrapper}>
+    <section id="my-skills" className={styles.wrapper}>
       {/*<h1>Co potrafię? 🖖🏻</h1>*/}
       <div className={styles.mySkills}>
         <img src={smallLogo} />

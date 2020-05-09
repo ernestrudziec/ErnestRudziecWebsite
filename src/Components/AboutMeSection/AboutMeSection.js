@@ -43,7 +43,7 @@ const AboutMeSection = () => {
         </div>
       </section>
 
-      <section className={styles.aboutResponsiveWrapper}>
+      <section id="about-responsive" className={styles.aboutResponsiveWrapper}>
         <div className={styles.content}>
           <img src={picture2} className={styles.responsivePicture} />
 
