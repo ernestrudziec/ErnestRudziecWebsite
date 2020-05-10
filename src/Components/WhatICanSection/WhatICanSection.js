@@ -47,7 +47,7 @@ const WhatICanSection = () => {
           </article>
           <h3>
             {/*Co lubię projektować?*/}
-            What I like design?
+            What I like to design?
           </h3>
           {/*<article>*/}
           {/*    UI/UX desing | logotypy | strony internetowe | banery | wizytówki | ulotki | brand | social media*/}
@@ -115,14 +115,14 @@ const WhatICanSection = () => {
               <li>Video editing</li>
               <li>Helping other people</li>
               <li>Watching football (vamos Barca!)</li>
-              <li>Public speaking, I like talk...</li>
+              <li>Public speaking, I like to talk...</li>
               <li>Reading books, mostly fact literature or sci-fi.</li>
               <li>Watching TV series (Mr Robot, HIMYM) </li>
               <li>Learning new skills</li>
               <li>Playing videogames </li>
             </ul>
           </article>
-          <h3>Languages i speak</h3>
+          <h3>Languages I speak</h3>
           <article className={styles.whatIWillUse}>
             My native language is <s>javascript</s> polish but I also speak and
             write well in english. (My level is B2/C1)
