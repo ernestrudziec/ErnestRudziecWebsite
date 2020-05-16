@@ -88,7 +88,7 @@ const StyledButton = styled.button`
   padding: 10px 5px;
   border-radius: 5px;
   outline: none;
-
+  transition: 0.3s ease-in-out;
   width: 100%;
 
   i {
