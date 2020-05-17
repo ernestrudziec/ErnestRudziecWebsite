@@ -9,18 +9,25 @@ const FooterSection = () => {
       <div className={styles.contactWrapper}>
         <div className={styles.contact}>
           <div>ernest.rudziec@gmail.com</div>
+
           <div>
-            <a href="https://github.com/ernestrudziec">
+            <a target="_blank" href="https://github.com/ernestrudziec">
               <i className="fab fa-github"></i>
             </a>
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/ernest-rudziec-4225231a7/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ernest-rudziec-4225231a7/"
+            >
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
           <div>
-            <a href="https://drive.google.com/file/d/1ooNbvl47rnS0CPGcV1UqRIZqIgOn05nc/view?usp=sharing">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1ZjDvJ9ddfySpQyLYHCaaF7bxToX6Q02k/view?usp=sharing"
+            >
               resume/cv
             </a>
           </div>

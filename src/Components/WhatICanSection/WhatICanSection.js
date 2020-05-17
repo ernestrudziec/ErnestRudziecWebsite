@@ -79,11 +79,10 @@ const WhatICanSection = () => {
               <li>SASS</li>
               <li>Javascript ES6+</li>
               <li>React + Redux</li>
+              <li>styled-components</li>
               <li>Git/Github</li>
-              <li>Bootstrap</li>
               <li>Npm</li>
-              <li>Terminal, brew</li>
-              <li>Webstorm, Visual Studio</li>
+              <li>Webstorm</li>
             </ul>
           </article>
           <h3>What will I be good at?</h3>
@@ -119,13 +118,13 @@ const WhatICanSection = () => {
               <li>Reading books, mostly fact literature or sci-fi.</li>
               <li>Watching TV series (Mr Robot, HIMYM) </li>
               <li>Learning new skills</li>
-              <li>Playing videogames </li>
+              <li>Playing video games </li>
             </ul>
           </article>
           <h3>Languages I speak</h3>
           <article className={styles.whatIWillUse}>
             My native language is <s>javascript</s> polish but I also speak and
-            write well in english. (My level is B2/C1)
+            write well in english.
           </article>
         </div>
       </div>

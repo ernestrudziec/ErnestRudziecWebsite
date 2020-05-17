@@ -20,22 +20,22 @@ import img2 from "../../assets/svg/logotyp2.svg";
 
 const StyledNavigation = styled.nav`
   position: fixed;
-  z-index: 999;
+  z-index: 997;
   color: black;
   right: 2em;
   top: 2em;
+
   padding: 1em;
   padding-top: 3.5em;
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  width: 300px;
-  height: 380px;
 
+  transform: scale(1);
   @media screen and (max-width: 600px) {
-    width: calc(100% - 4em);
+    left: 2em;
   }
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.3);
 
   @media screen and (min-width: 1200px) {
     right: calc(50% - 600px);
@@ -46,20 +46,22 @@ const StyledNavigation = styled.nav`
     padding: 0;
     font-weight: 400;
     font-size: 1.1em;
+    margin: 0 10px;
+    width: auto;
   }
 
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in;
+
   ${({ active }) =>
     active &&
     css`
-      width: 4.5em;
-      height: 2.5em;
+      transform-origin: right top;
+      transform: scale(0);
+      //width: 4.5em;
+      //height: 2.5em;
       box-shadow: none;
       border-radius: 50%;
-
-      @media screen and (max-width: 600px) {
-        width: 4.5em;
-      }
+      transition: all 0.5s ease-in-out;
     `}
 `;
 
@@ -67,16 +69,21 @@ const StyledButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  position: absolute;
-
+  position: fixed;
   font-size: 2em;
+
   width: 72px;
   height: 72px;
-
-  right: 0px;
-  top: 0px;
+  background: white;
+  right: 1em;
+  top: 1em;
+  z-index: 999;
 
   border-radius: 50%;
+
+  @media screen and (min-width: 1200px) {
+    right: calc(50% - 600px);
+  }
 `;
 
 const StyledX = styled.div`
@@ -134,61 +141,64 @@ const StyledLi = styled.li`
 const Navigation = () => {
   const [isNavOpened, setNavIsOpened] = useState(true);
   return (
-    <StyledNavigation active={isNavOpened}>
+    <>
       <StyledButton onClick={() => setNavIsOpened(!isNavOpened)}>
         <StyledX className="fas fa-times" active={!isNavOpened} />
         <StyledHam className="fas fa-hamburger" active={isNavOpened} />
       </StyledButton>
-      <ul>
-        <AnchorLink onClick={() => setNavIsOpened(!isNavOpened)} href="#home">
-          <StyledLi color="transparent">
-            <img src={img2} />
-          </StyledLi>
-        </AnchorLink>
 
-        <AnchorLink
-          onClick={() => setNavIsOpened(!isNavOpened)}
-          href="#about-me"
-        >
-          <StyledLi color="#52C0D6">
-            <span>😅</span>about me
-          </StyledLi>
-        </AnchorLink>
+      <StyledNavigation active={isNavOpened}>
+        <ul>
+          <AnchorLink onClick={() => setNavIsOpened(!isNavOpened)} href="#home">
+            <StyledLi color="transparent">
+              <img src={img2} />
+            </StyledLi>
+          </AnchorLink>
 
-        <AnchorLink
-          onClick={() => setNavIsOpened(!isNavOpened)}
-          href="#about-responsive"
-        >
-          <StyledLi color="#ff2a6d">
-            <span>👨‍💻</span>rwd
-          </StyledLi>
-        </AnchorLink>
-        <AnchorLink
-          onClick={() => setNavIsOpened(!isNavOpened)}
-          href="#my-skills"
-        >
-          <StyledLi color="#52C0D6">
-            <span>⚡️</span>my skills
-          </StyledLi>
-        </AnchorLink>
-        <AnchorLink
-          onClick={() => setNavIsOpened(!isNavOpened)}
-          href="#my-works"
-        >
-          <StyledLi color="#ff2a6d">
-            <span>🎨</span>my works
-          </StyledLi>
-        </AnchorLink>
-        <AnchorLink
-          onClick={() => setNavIsOpened(!isNavOpened)}
-          href="#contact"
-        >
-          <StyledLi color="#52C0D6">
-            <span>🤝</span>contact/cv
-          </StyledLi>
-        </AnchorLink>
-      </ul>
-    </StyledNavigation>
+          <AnchorLink
+            onClick={() => setNavIsOpened(!isNavOpened)}
+            href="#about-me"
+          >
+            <StyledLi color="#52C0D6">
+              <span>😅</span>about me
+            </StyledLi>
+          </AnchorLink>
+
+          <AnchorLink
+            onClick={() => setNavIsOpened(!isNavOpened)}
+            href="#about-responsive"
+          >
+            <StyledLi color="#ff2a6d">
+              <span>👨‍💻</span>rwd
+            </StyledLi>
+          </AnchorLink>
+          <AnchorLink
+            onClick={() => setNavIsOpened(!isNavOpened)}
+            href="#my-skills"
+          >
+            <StyledLi color="#52C0D6">
+              <span>⚡️</span>my skills
+            </StyledLi>
+          </AnchorLink>
+          <AnchorLink
+            onClick={() => setNavIsOpened(!isNavOpened)}
+            href="#my-works"
+          >
+            <StyledLi color="#ff2a6d">
+              <span>🎨</span>my works
+            </StyledLi>
+          </AnchorLink>
+          <AnchorLink
+            onClick={() => setNavIsOpened(!isNavOpened)}
+            href="#contact"
+          >
+            <StyledLi color="#52C0D6">
+              <span>🤝</span>contact/cv
+            </StyledLi>
+          </AnchorLink>
+        </ul>
+      </StyledNavigation>
+    </>
   );
 };
 
