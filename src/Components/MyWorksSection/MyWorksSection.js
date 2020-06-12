@@ -95,6 +95,27 @@ const MyWorksSection = () => {
           description="That's one of my first websites made simply in HTML/CSS for my personal purposes when I was only freelance Graphic Designer"
           url="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
         />
+        <Project
+          name="Falowanie"
+          link="https://falowanie.netlify.app"
+          bgcolor={pink}
+          description="Blog for my friend made with react, gatsby.js and DatoCMS."
+          url="https://images.pexels.com/photos/236111/pexels-photo-236111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        />
+        <Project
+          name="Dreamakers"
+          link="https://dreamakers.netlify.app"
+          bgcolor={dark_blue2}
+          description="Website for my friend made just for college purposes. About wedding photography. (Only desktop version, not responsive)"
+          url="https://images.pexels.com/photos/3916019/pexels-photo-3916019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        />
+        <Project
+          name="Want-watch"
+          link="https://wantwatch.netlify.app"
+          bgcolor={mint}
+          description="Web application made as a movie wish-list maker - uses filmweb.pl api and not fully working yet because of CORS problems"
+          url="https://images.pexels.com/photos/1040159/pexels-photo-1040159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        />
       </div>
     </div>
   );
