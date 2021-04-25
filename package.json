@@ -1,47 +1,51 @@
 {
-  "name": "ernestrudziecpl",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@postlight/mercury-parser": "^2.2.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "animate.css": "^3.7.2",
-    "css-modules": "^0.3.0",
-    "font-awesome": "^4.7.0",
-    "fontawesome": "^5.6.3",
-    "jquery": "^3.4.1",
-    "node-sass": "^4.13.1",
-    "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "scss": "^0.2.4",
-    "smoothscroll-polyfill": "^0.4.4",
-    "styled-components": "^5.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "ernestrudziecpl",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@postlight/mercury-parser": "^2.2.0",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.5.0",
+		"@testing-library/user-event": "^7.2.1",
+		"animate.css": "^3.7.2",
+		"css-modules": "^0.3.0",
+		"font-awesome": "^4.7.0",
+		"fontawesome": "^5.6.3",
+		"jquery": "^3.6.0",
+		"prettier": "^2.0.5",
+		"react": "^16.13.1",
+		"react-anchor-link-smooth-scroll": "^1.0.12",
+		"react-animate-on-scroll": "^2.1.5",
+		"react-dom": "^16.13.1",
+		"react-scripts": "3.4.1",
+		"react-smooth-scrollbar": "^8.0.6",
+		"scss": "^0.2.4",
+		"smooth-scrollbar": "^8.6.1",
+		"smoothscroll-polyfill": "^0.4.4",
+		"styled-components": "^5.1.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"sass": "^1.32.11"
+	}
 }

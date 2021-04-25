@@ -1,181 +1,138 @@
-@import "src/styles/globalColors";
+@import 'src/styles/globalColors';
 @keyframes rotateBlob {
+	0% {
+		transform: rotate(225deg) scale(0.7);
+	}
 
-  0%{
-    transform: rotate(225deg) scale(0.7);;
-  }
+	50% {
+		transform: rotate(200deg) scale(0.8);
+	}
 
-  50%{
-    transform: rotate(200deg) scale(0.8);;
-  }
-
-  100%{
-    transform: rotate(225deg) scale(0.7);;
-  }
-
+	100% {
+		transform: rotate(225deg) scale(0.7);
+	}
 }
 
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
+	color: white;
+	padding: 5em 2em;
+	position: relative;
 
-.wrapper{
+	img {
+		width: 100px;
+		margin-bottom: 2em;
+	}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	* {
+		max-width: 900px;
+	}
 
+	:after {
+		content: '';
+		position: absolute;
 
-  color: white;
-  padding: 5em 2em;
-  position: relative;
+		z-index: -4;
+		background: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')
+			no-repeat center;
+		background-size: cover;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
 
-  img{
-    width: 100px;
-    margin-bottom: 2em;
-  }
-
-  *{
-    max-width: 900px;
-  }
-
-  :after{
-    content: "";
-    position: absolute;
-
-    z-index: -4;
-    background: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center;
-    background-size: cover;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-
-
-  }
-
-  :before{
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background: linear-gradient(0deg, rgba(17,17,38,1) 0%, rgba(17,17,38,0.1) 100%);
-
-  }
-
+	:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		background: linear-gradient(0deg, rgba(17, 17, 38, 1) 0%, rgba(17, 17, 38, 0.1) 100%);
+	}
 }
 
-.paragraphWrapper{
+.paragraphWrapper {
+	h1 {
+		padding-left: 0.5em;
+	}
 
-  h1{
-    padding-left: 0.5em;
-  }
+	transition: 0.3s;
+	@media screen and (max-width: 1400px) {
+		width: auto;
+	}
+	p {
+		&:nth-of-type(1) {
+			color: white;
+			padding: 0 1em;
+			margin-bottom: 2em;
+		}
 
-  transition: 0.3s;
-  @media screen and (max-width: 1400px){
-    width: auto;
-  }
-  p{
-    &:nth-of-type(1){
-      color: white;
-      padding: 0 1em;
-      margin-bottom: 2em;
-
-
-    }
-
-
-    &:nth-of-type(2){
-      color: white;
-      background: $pink;
-      padding: 1em;
-      border-radius: 10px;
-
-    }
-
-  }
+		&:nth-of-type(2) {
+			color: white;
+			background: $pink;
+			padding: 1em;
+			border-radius: 10px;
+		}
+	}
 }
 
-
-.content, .content2{
-  padding: 3em 0;
-  max-width: 1200px;
+.content,
+.content2 {
+	padding: 3em 0;
+	max-width: 1200px;
 }
 
-.content{
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-
-
-
-  @media screen and (max-width: 800px){
-    flex-direction: column;
-  }
-
-
-
-
-
+	@media screen and (max-width: 800px) {
+		flex-direction: column;
+	}
 }
 
-.content2{
-
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @media screen and (max-width: 800px){
-    flex-direction: column-reverse;
-  }
-
-
-
+.content2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media screen and (max-width: 800px) {
+		flex-direction: column-reverse;
+	}
 }
 
+.description {
+	span {
+		margin-right: 0.5em;
+	}
+	max-width: 800px;
+	margin: 0 5em;
 
-
-.description{
-  span{
-    margin-right: 0.5em;
-  }
-max-width: 800px;
-  margin: 0 5em;
-
-  @media screen and (max-width: 600px){
-    margin: 0;
-  }
+	@media screen and (max-width: 600px) {
+		margin: 0;
+	}
 }
 
-.aboutResponsiveWrapper{
-
-background: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 5em 2em;
-  flex-direction: column;
+.aboutResponsiveWrapper {
+	background: white;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 5em 2em;
+	flex-direction: column;
 }
 
-.responsivePicture{
-  width: 350px;
+.responsivePicture {
+	width: 350px;
 
-
-  @media screen and (max-width: 900px){
-    width: 250px;
-  }
-
+	@media screen and (max-width: 900px) {
+		width: 250px;
+	}
 }
-
-
-
-
-
-
-
-
