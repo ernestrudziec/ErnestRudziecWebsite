@@ -10,7 +10,7 @@ const StyledProject = styled.div`
   text-align: center;
   padding: 1em 0.3em;
   font-size: 3em;
-  color: white;
+  color: ${(props) => (props.color ? props.color : "white")};
   width: 500px;
   height: 320px;
   position: relative;
@@ -122,30 +122,43 @@ const StyledA = styled.a`
   width: 100%;
 `;
 
-const Project = ({ bgcolor, url, name, link, description, github }) => {
+const Logo = styled.img`
+  width: ${(props) => props.width || "100px"};
+  height: ${(props) => props.height || "auto"};
+  margin-bottom: ${(props) => props.mb || "1rem"};
+  margin-top: ${(props) => props.mt || "0"};
+
+  height: auto;
+`;
+
+const Project = ({
+  bgcolor,
+  url,
+  name,
+  link,
+  description,
+  github,
+  logoUrl,
+  color,
+  logoWidth,
+  logoHeight,
+  logoMarginBottom,
+  logoMarginTop
+}) => {
   return (
     <>
-      <StyledProject bgcolor={bgcolor} url={url}>
+      <StyledProject color={color} bgcolor={bgcolor} url={url}>
+        <Logo
+          src={logoUrl}
+          width={logoWidth}
+          height={logoHeight}
+          mb={logoMarginBottom}
+          mt={logoMarginTop}
+        ></Logo>
         <StyledTop>
           <h1>{name}</h1>
           <h4>{description}</h4>
         </StyledTop>
-
-        <StyledBottom>
-          <StyledA target="_blank" active={github} href={github}>
-            <StyledButton active={github} bgcolor={bgcolor}>
-              Github
-              <i className="fab fa-github"></i>
-            </StyledButton>
-          </StyledA>
-
-          <StyledA target="_blank" active={link} href={link}>
-            <StyledButton active={link} bgcolor={bgcolor}>
-              Demo
-              <i className="fas fa-play"></i>
-            </StyledButton>
-          </StyledA>
-        </StyledBottom>
       </StyledProject>
     </>
   );
