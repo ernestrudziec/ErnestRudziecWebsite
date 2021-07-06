@@ -12,9 +12,13 @@ const StyledProject = styled.div`
   font-size: 3em;
   color: ${(props) => (props.color ? props.color : "white")};
   width: 500px;
-  height: 320px;
+  min-height: 320px;
   position: relative;
   border-radius: 10px;
+
+  @media screen and (min-width: 1200px) {
+    height: 340px;
+  }
 
   margin: 0.3em;
   box-shadow: 0px 0px 100px -10px rgba(0, 0, 0, 0.5);
