@@ -95,9 +95,7 @@ const MyWorksSection = () => {
           github="https://github.com/ernestrudziec/EventHelperApp"
           link="https://zjazdkum.online"
           description="Developing front-end layer of website"
-          url={
-            "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          }
+          url={"https://pianujemy.com.pl/assets/hero-bg.jpg"}
         />
         <Project
           name="intensivevr.com"

@@ -8,7 +8,7 @@ const StyledProject = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 1em 0.3em;
+  padding: 1em 0.5em;
   font-size: 3em;
   color: ${(props) => (props.color ? props.color : "white")};
   width: 500px;
